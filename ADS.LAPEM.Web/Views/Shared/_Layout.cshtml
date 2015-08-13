@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/south-street/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+     @Scripts.Render("~/bundles/jqueryplugin")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/ads")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(document).ready(function () {
+            ADS.Init();
+        });
+    </script>
+</head>
+<body>    
+    <div class="wrapper">
+
+	<header id="headerInteriores">
+        <div class="wrapper">
+			<div id="logoInteriores">
+			</div>
+			<div id="wrapperSubmenu">
+				<div class="submenu">
+                    <button onclick="" class="btnSalir"></button>				
+				</div>
+				<div id="sombraSubmenu">
+				</div>
+				<div class="submenu">
+				</div>
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+       
+        <div id='cssmenu'>
+            
+            @*@{ Html.RenderAction("GetMenu"); }*@
+
+            <ul>
+               <li class='active'><a href='/'><span>[Home]</span></a></li>
+               <li class='has-sub'><a href='#'><span>[Catalogos]</span></a>
+                  <ul>
+                     <li>@Html.ActionLink("Calibracion", "Index", new { area = "Catalogo", controller = "Calibracion"}, null)</li>
+                     <li>@Html.ActionLink("Color", "Index", new { area = "Catalogo", controller = "Color"}, null)</li>                     
+                     <li>@Html.ActionLink("Equipo", "Index", new { area = "Catalogo", controller = "Equipo"}, null)</li>
+                     <li>@Html.ActionLink("EquipoEnsayo", "Index", new { area = "Catalogo", controller = "EnsayoEquipo"}, null)</li>
+                     <li>@Html.ActionLink("Especificaciones", "Index", new { area = "Catalogo", controller = "Especificacion"}, null)</li>
+                     <li>@Html.ActionLink("Linea", "Index", new { area = "Catalogo", controller = "Linea"}, null)</li>                     
+                     @*<li>@Html.ActionLink("Norma Producto", "Index", new { area = "Catalogo", controller = "NormaProducto"}, null)</li>*@
+                     <li>@Html.ActionLink("Norma", "Index", new { area = "Catalogo", controller = "Norma"}, null)</li>
+                     <li>@Html.ActionLink("Norma Ensayo", "Index", new { area = "Catalogo", controller = "NormaEnsayo"}, null)</li>
+                     <li>@Html.ActionLink("Planta", "Index", new { area = "Catalogo", controller = "Planta"}, null)</li>
+                     <li>@Html.ActionLink("Producto", "Index", new { area = "Catalogo", controller = "Producto"}, null)</li>
+                     <li>@Html.ActionLink("Proveedor", "Index", new { area = "Catalogo", controller = "Proveedor"}, null)</li>
+                     <li>@Html.ActionLink("Silo", "Index", new { area = "Catalogo", controller = "Silo"}, null)</li>
+                     <li>@Html.ActionLink("Tipo Producto", "Index", new { area = "Catalogo", controller = "TipoProducto"}, null)</li>
+                     <li>@Html.ActionLink("Tipo Prueba", "Index", new { area = "Catalogo", controller = "TipoPrueba"}, null)</li>         
+                      <li>@Html.ActionLink("Turno", "Index", new { area = "Catalogo", controller = "Turno"}, null)</li>
+                  </ul>
+               </li>
+                <li class='has-sub'><a href='#'><span>[Consultas]</span></a>
+                  <ul>
+                     <li>@Html.ActionLink("Consulta Histórica", "Index", new { area = "Consulta", controller = "ConsultaHistorica"}, null)</li>
+                     <li>@Html.ActionLink("Consulta por Lotes", "Index", new { area = "Consulta", controller = "ConsultaPorLote"}, null)</li>                     
+                     <li>@Html.ActionLink("Consulta en Línea", "Index", new { area = "Consulta", controller = "ConsultaEnLinea"}, null)</li>
+                     <li>@Html.ActionLink("Consulta Aviso de Prueba", "Index", new { area = "Consulta", controller = "ConsultaAviso"}, null)</li>
+                     <li>@Html.ActionLink("Consulta Logs", "Index", new { area = "Consulta", controller = "ConsultaLog"}, null)</li>
+                  </ul>
+               </li>
+                <li class='has-sub'><a href='#'><span>[Reportes]</span></a>
+                  <ul>
+                     <li>@Html.ActionLink("Reporte Agrietamiento", "Index", new { area = "Reporte", controller = "RpteAgrietamiento"}, null)</li>
+                     <li>@Html.ActionLink("Reporte Aplastamiento", "Index", new { area = "Reporte", controller = "RpteAplastamiento"}, null)</li>
+                     <li>@Html.ActionLink("Reporte de Caracteristicas", "Index", new { area = "Reporte", controller = "RpteCaracteristicasF"}, null)</li>
+                     <li>@Html.ActionLink("Reporte Dimensional", "Index", new { area = "Reporte", controller = "RpteDimensional"}, null)</li>
+                     <li>@Html.ActionLink("Reporte de Espesores", "Index", new { area = "Reporte", controller = "RpteEspesor"}, null)</li>
+                     <li>@Html.ActionLink("Reporte de Hermeticidad", "Index", new { area = "Reporte", controller = "RpteHermeticidad"}, null)</li>
+                     <li>@Html.ActionLink("Reporte de Impacto", "Index", new { area = "Reporte", controller = "RpteImpacto"}, null)</li>
+                     <li>@Html.ActionLink("Reporte de Rigidez", "Index", new { area = "Reporte", controller = "RpteRigidez"}, null)</li>
+                     <li>@Html.ActionLink("Reporteador", "Index", new { area = "Reporte", controller = "Reporteador"}, null)</li>
+                  </ul>
+               </li>
+                <li class='has-sub'><a href='#'><span>[Pruebas]</span></a>
+                  <ul>                     
+                     <li class='last'>@Html.ActionLink("Aviso de Pruebas", "Index", new { area = "Catalogo", controller = "AvisoPrueba"}, null)</li>
+                  </ul>
+               </li>
+               <li class='has-sub'><a href='#'><span>[Seguridad]</span></a>
+                  <ul>
+                     <li>@Html.ActionLink("Perfil", "Index", new { area = "Seguridad", controller = "Perfil"}, null)</li>
+                     @*<li>@Html.ActionLink("Permisos", "Index", new { area = "Seguridad", controller = "PerfilMenu"}, null)</li>
+                     <li>@Html.ActionLink("Login", "Index", new { area = "Seguridad", controller = "Account"}, null)</li>*@
+                     <li class='last'>@Html.ActionLink("Usuario", "Index", new { area = "Seguridad", controller = "Usuario"}, null)</li>
+                  </ul>
+               </li>                
+               <li class='last'>@Html.ActionLink("[Salir]", "Logout", new { area = "Seguridad", controller = "Account"}, null)</li>
+            </ul>   
+           
+          </div>
+    </header><!-- .header-->
+
+	<main class="content">
+		@RenderBody()
+	</main><!-- .content -->
+
+</div><!-- .wrapper -->
+<br />
+<br />
+<footer class="footer">
+    <div align="center">
+        <strong>ADS Mexicana 2013. Todos los Derechos Reservados</strong>
+    </div>	
+</footer><!-- .footer -->
+</body>
+</html>

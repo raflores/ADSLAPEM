@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43F9AD31-8C26-4AD0-80FE-9A9176573456}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ADS.LAPEM.Web</RootNamespace>
+    <AssemblyName>ADS.LAPEM.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
+    <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <PrecompileBeforePublish>false</PrecompileBeforePublish>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>false</ExcludeApp_Data>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bsd.Common.Infrastructure, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ActualesADS\Bsd.Common.Infrastructure.1.0.5-M1\lib\net40\Bsd.Common.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Bsd.Common.Report">
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Bsd.Common.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop">
+      <HintPath>..\packages\Spring.Aop.2.0.0-M2\lib\net40\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\packages\Spring.Core.2.0.0-M2\lib\net40\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data">
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Web, Version=2.0.0.40000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Spring.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Web.Mvc4">
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Spring.Web.Mvc4.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.30506.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Catalogo\CatalogoAreaRegistration.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\AvisoPruebaController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\CalibracionController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\ColorController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\EnsayoEquipoController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\EquipoController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\EspecificacionController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\LineaController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\NormaController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\NormaEnsayoController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\NormaProductoController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\PlantaController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\ProductoController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\ProveedorController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\SiloController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\TipoProductoController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\TipoPruebaController.cs" />
+    <Compile Include="Areas\Catalogo\Controllers\TurnoController.cs" />
+    <Compile Include="Areas\Catalogo\Models\AvisoPruebaViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\CalibracionViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\ColorViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\EnsayoEquipoViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\EquipoViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\EspecificacionViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\LineaViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\NormaEnsayoViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\NormaProductoViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\NormaViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\PlantaViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\ProductoViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\ProveedorViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\SiloViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\TipoProductoViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\TipoPruebaViewModel.cs" />
+    <Compile Include="Areas\Catalogo\Models\TurnoViewModel.cs" />
+    <Compile Include="Areas\Consulta\ConsultaAreaRegistration.cs" />
+    <Compile Include="Areas\Consulta\Controllers\ConsultaAvisoController.cs" />
+    <Compile Include="Areas\Consulta\Controllers\ConsultaEnLineaController.cs" />
+    <Compile Include="Areas\Consulta\Controllers\ConsultaHistoricaController.cs" />
+    <Compile Include="Areas\Consulta\Controllers\ConsultaImagenController.cs" />
+    <Compile Include="Areas\Consulta\Controllers\ConsultaLogController.cs" />
+    <Compile Include="Areas\Consulta\Controllers\ConsultaPorLoteController.cs" />
+    <Compile Include="Areas\Consulta\Models\LogViewModel.cs" />
+    <Compile Include="Areas\Consulta\Models\LoteViewModel.cs" />
+    <Compile Include="Areas\Example\Controllers\PersonController.cs" />
+    <Compile Include="Areas\Example\ExampleAreaRegistration.cs" />
+    <Compile Include="Areas\Example\Models\PersonViewModel.cs" />
+    <Compile Include="Areas\Reporte\Controllers\ReporteadorController.cs" />
+    <Compile Include="Areas\Reporte\Controllers\RpteAgrietamientoController.cs" />
+    <Compile Include="Areas\Reporte\Controllers\RpteAplastamientoController.cs" />
+    <Compile Include="Areas\Reporte\Controllers\RpteCaracteristicasFController.cs" />
+    <Compile Include="Areas\Reporte\Controllers\RpteDimensionalController.cs" />
+    <Compile Include="Areas\Reporte\Controllers\RpteEspesorController.cs" />
+    <Compile Include="Areas\Reporte\Controllers\RpteHermeticidadController.cs" />
+    <Compile Include="Areas\Reporte\Controllers\RpteImpactoController.cs" />
+    <Compile Include="Areas\Reporte\Controllers\RpteRigidezController.cs" />
+    <Compile Include="Areas\Reporte\Controllers\TestController.cs" />
+    <Compile Include="Areas\Reporte\Models\ReporteadorViewModel.cs" />
+    <Compile Include="Areas\Reporte\Models\RpteAgrietamientoViewModel.cs" />
+    <Compile Include="Areas\Reporte\Models\RpteAplastamientoViewModel.cs" />
+    <Compile Include="Areas\Reporte\Models\RpteCaracteristicasFViewModel.cs" />
+    <Compile Include="Areas\Reporte\Models\RpteDimensionalViewModel.cs" />
+    <Compile Include="Areas\Reporte\Models\RpteEspesorViewModel.cs" />
+    <Compile Include="Areas\Reporte\Models\RpteHermeticidadViewModel.cs" />
+    <Compile Include="Areas\Reporte\Models\RpteImpactoViewModel.cs" />
+    <Compile Include="Areas\Reporte\Models\RpteRigidezViewModel.cs" />
+    <Compile Include="Areas\Reporte\ReporteAreaRegistration.cs" />
+    <Compile Include="Areas\Seguridad\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Seguridad\Controllers\PerfilController.cs" />
+    <Compile Include="Areas\Seguridad\Controllers\PerfilMenuController.cs" />
+    <Compile Include="Areas\Seguridad\Controllers\UsuarioController.cs" />
+    <Compile Include="Areas\Seguridad\Models\AccountViewModel.cs" />
+    <Compile Include="Areas\Seguridad\Models\PerfilMenuViewModel.cs" />
+    <Compile Include="Areas\Seguridad\Models\PerfilViewModel.cs" />
+    <Compile Include="Areas\Seguridad\Models\UsuarioViewModel.cs" />
+    <Compile Include="Areas\Seguridad\SeguridadAreaRegistration.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\Grid\Filter\LoggingFilterAttribute.cs" />
+    <Compile Include="Infrastructure\Grid\GridSettingsWeb.cs" />
+    <Compile Include="Infrastructure\Model\GridModelBinderWeb.cs" />
+    <Compile Include="LAPEM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LAPEMDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEMDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LAPEMTest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEMTest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BaseViewModel.cs" />
+    <Compile Include="Models\HomeViewModel.cs" />
+    <Compile Include="Models\MenuViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\aop.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\controller.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\repository.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\service.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\images\ADSBackground.png" />
+    <Content Include="Content\images\AdsHome.png" />
+    <Content Include="Content\images\AdsMexicana.png" />
+    <Content Include="Content\images\btnborrar-hover.png" />
+    <Content Include="Content\images\btnborrar.png" />
+    <Content Include="Content\images\btnbuscar-hover.png" />
+    <Content Include="Content\images\btnbuscar.png" />
+    <Content Include="Content\images\btneditar-hover.png" />
+    <Content Include="Content\images\btneditar.png" />
+    <Content Include="Content\images\btnguarda-hover.png" />
+    <Content Include="Content\images\btnguardar.png" />
+    <Content Include="Content\images\btnhoja-hover.png" />
+    <Content Include="Content\images\btnhoja.png" />
+    <Content Include="Content\images\btnimprimir-hover.png" />
+    <Content Include="Content\images\btnimprimir.png" />
+    <Content Include="Content\images\btnpdf-hover.png" />
+    <Content Include="Content\images\btnpdf.png" />
+    <Content Include="Content\images\btnsalir-hover.png" />
+    <Content Include="Content\images\btnsalir.png" />
+    <Content Include="Content\images\comillas-in.png" />
+    <Content Include="Content\images\comillas-out.png" />
+    <Content Include="Content\images\grad_dark.png" />
+    <Content Include="Content\images\img-aterrizaje.png" />
+    <Content Include="Content\images\logo-index.png" />
+    <Content Include="Content\images\logo-interiores.png" />
+    <Content Include="Content\images\sombra-footer.png" />
+    <Content Include="Content\images\sombra-index.png" />
+    <Content Include="Content\images\sombra-submenu.png" />
+    <Content Include="Content\jquery.jqGrid\ellipsis-xbl.xml" />
+    <Content Include="Content\jquery.jqGrid\ui.jqgrid.css" />
+    <Content Include="Content\themes\base\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.menu.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.spinner.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\jquery.ui.tooltip.css" />
+    <Content Include="Content\themes\base\minified\images\animated-overlay.gif" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.menu.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.spinner.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Content\themes\overcast\images\animated-overlay.gif" />
+    <Content Include="Content\themes\overcast\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\overcast\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="Content\themes\overcast\images\ui-bg_flat_55_c0402a_40x100.png" />
+    <Content Include="Content\themes\overcast\images\ui-bg_flat_55_eeeeee_40x100.png" />
+    <Content Include="Content\themes\overcast\images\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="Content\themes\overcast\images\ui-bg_glass_35_dddddd_1x400.png" />
+    <Content Include="Content\themes\overcast\images\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="Content\themes\overcast\images\ui-bg_inset-hard_75_999999_1x100.png" />
+    <Content Include="Content\themes\overcast\images\ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <Content Include="Content\themes\overcast\images\ui-icons_3383bb_256x240.png" />
+    <Content Include="Content\themes\overcast\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\overcast\images\ui-icons_70b2e1_256x240.png" />
+    <Content Include="Content\themes\overcast\images\ui-icons_999999_256x240.png" />
+    <Content Include="Content\themes\overcast\images\ui-icons_fbc856_256x240.png" />
+    <Content Include="Content\themes\overcast\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Content\themes\overcast\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Content\themes\south-street\images\animated-overlay.gif" />
+    <Content Include="Content\themes\south-street\images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <Content Include="Content\themes\south-street\images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <Content Include="Content\themes\south-street\images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <Content Include="Content\themes\south-street\images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <Content Include="Content\themes\south-street\images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <Content Include="Content\themes\south-street\images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <Content Include="Content\themes\south-street\images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <Content Include="Content\themes\south-street\images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <Content Include="Content\themes\south-street\images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <Content Include="Content\themes\south-street\images\ui-icons_808080_256x240.png" />
+    <Content Include="Content\themes\south-street\images\ui-icons_847e71_256x240.png" />
+    <Content Include="Content\themes\south-street\images\ui-icons_8DC262_256x240.png" />
+    <Content Include="Content\themes\south-street\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\south-street\images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="Content\themes\south-street\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\themes\south-street\jquery-ui-1.10.3.custom.css" />
+    <Content Include="Content\themes\south-street\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Areas\Example\Views\Web.config" />
+    <Content Include="Areas\Example\Views\Person\Index.cshtml" />
+    <Content Include="Areas\Example\Views\Person\Create.cshtml" />
+    <Content Include="Areas\Example\Views\Person\Edit.cshtml" />
+    <Content Include="Areas\Example\Views\Person\_Delete.cshtml" />
+    <Content Include="Areas\Example\Views\Person\_Form.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Web.config" />
+    <Content Include="Areas\Seguridad\Views\Perfil\Index.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Perfil\Create.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Perfil\_Form.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Perfil\Edit.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Perfil\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Web.config" />
+    <Content Include="Areas\Catalogo\Views\Planta\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Planta\Details.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Planta\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Planta\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Planta\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Planta\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Equipo\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Equipo\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Equipo\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Equipo\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Equipo\Edit.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Usuario\Index.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Usuario\Edit.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Usuario\Create.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Usuario\_Form.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Usuario\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Proveedor\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Proveedor\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Proveedor\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Proveedor\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Proveedor\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Linea\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Linea\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Linea\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Linea\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Linea\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Silo\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Silo\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Silo\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Silo\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Silo\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Calibracion\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Calibracion\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Calibracion\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Calibracion\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Calibracion\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\TipoPrueba\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\TipoPrueba\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\TipoPrueba\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\TipoPrueba\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\TipoPrueba\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\NormaProducto\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\NormaProducto\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\NormaProducto\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\NormaProducto\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\NormaProducto\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\TipoProducto\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\TipoProducto\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\TipoProducto\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\TipoProducto\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\TipoProducto\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\NormaEnsayo\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\NormaEnsayo\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\NormaEnsayo\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\NormaEnsayo\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\NormaEnsayo\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Producto\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Producto\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Producto\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Producto\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Producto\_Form.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Account\Index.cshtml" />
+    <Content Include="Areas\Seguridad\Views\PerfilMenu\Create.cshtml" />
+    <Content Include="Areas\Seguridad\Views\PerfilMenu\Edit.cshtml" />
+    <Content Include="Areas\Seguridad\Views\PerfilMenu\Index.cshtml" />
+    <Content Include="Areas\Seguridad\Views\PerfilMenu\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\AvisoPrueba\Index.cshtml" />
+    <Content Include="Areas\Consulta\Views\Web.config" />
+    <Content Include="Areas\Consulta\Views\ConsultaHistorica\Index.cshtml" />
+    <Content Include="Areas\Consulta\Views\ConsultaPorLote\Index.cshtml" />
+    <Content Include="PDF\Calib1.pdf" />
+    <Content Include="PDF\diagramabd.pdf" />
+    <Content Include="Areas\Catalogo\Views\Color\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Color\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Color\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Color\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Color\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Turno\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Turno\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Turno\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Turno\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Turno\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Norma\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Norma\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Norma\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Norma\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Norma\_Form.cshtml" />
+    <Content Include="Areas\Reporte\Views\Web.config" />
+    <Content Include="Areas\Reporte\Views\Test\Index.cshtml" />
+    <Content Include="LAPEMTest.xsc">
+      <DependentUpon>LAPEMTest.xsd</DependentUpon>
+    </Content>
+    <Content Include="Areas\Reporte\Views\RpteAgrietamiento\Index.cshtml" />
+    <Content Include="Areas\Reporte\Views\RpteDimensional\Index.cshtml" />
+    <Content Include="Areas\Reporte\Views\RpteEspesor\Index.cshtml" />
+    <Content Include="Areas\Reporte\Views\RpteHermeticidad\Index.cshtml" />
+    <Content Include="Areas\Reporte\Views\RpteImpacto\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Especificacion\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Especificacion\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Especificacion\Edit.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Especificacion\_Delete.cshtml" />
+    <Content Include="Areas\Catalogo\Views\Especificacion\_Form.cshtml" />
+    <Content Include="Areas\Catalogo\Views\AvisoPrueba\_Captura.cshtml" />
+    <Content Include="Areas\Catalogo\Views\EnsayoEquipo\Index.cshtml" />
+    <Content Include="Areas\Catalogo\Views\EnsayoEquipo\Create.cshtml" />
+    <Content Include="Areas\Catalogo\Views\EnsayoEquipo\_Form.cshtml" />
+    <Content Include="Areas\Consulta\Views\ConsultaAviso\Index.cshtml" />
+    <Content Include="Areas\Seguridad\Views\Account\_Validacion.cshtml" />
+    <Content Include="LAPEM.xsc">
+      <DependentUpon>LAPEM.xsd</DependentUpon>
+    </Content>
+    <Content Include="Areas\Reporte\Views\Reporteador\Index.cshtml" />
+    <Content Include="Areas\Consulta\Views\ConsultaEnLinea\Index.cshtml" />
+    <Content Include="Areas\Reporte\Views\RpteCaracteristicasF\Index.cshtml" />
+    <Content Include="Areas\Consulta\Views\ConsultaLog\Index.cshtml" />
+    <Content Include="Areas\Reporte\Views\RpteAplastamiento\Index.cshtml" />
+    <Content Include="Areas\Reporte\Views\RpteRigidez\Index.cshtml" />
+    <Content Include="ClassDiagram1.cd" />
+    <None Include="LAPEM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LAPEM.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="LAPEM.xss">
+      <DependentUpon>LAPEM.xsd</DependentUpon>
+    </Content>
+    <Content Include="LAPEMDS.xsc">
+      <DependentUpon>LAPEMDS.xsd</DependentUpon>
+    </Content>
+    <None Include="LAPEMDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LAPEMDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="LAPEMDS.xss">
+      <DependentUpon>LAPEMDS.xsd</DependentUpon>
+    </Content>
+    <None Include="LAPEMTest.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LAPEMTest.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="LAPEMTest.xss">
+      <DependentUpon>LAPEMTest.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\ads.lapem.mx.pubxml" />
+    <None Include="Properties\PublishProfiles\bsd.adslapem.com.pubxml" />
+    <None Include="Properties\PublishProfiles\Maqueta.pubxml" />
+    <None Include="Properties\PublishProfiles\Test.pubxml" />
+    <None Include="Scripts\jquery-2.0.3.intellisense.js" />
+    <Content Include="Scripts\ADS\ADS.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.AvisoPrueba.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.Calibracion.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.Color.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.EnsayoEquipo.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.Equipo.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.Especificacion.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.Linea.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.Norma.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.NormaEnsayo.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.NormaProducto.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.Planta.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.Producto.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.Proveedor.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.Silo.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.TipoProducto.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.TipoPrueba.js" />
+    <Content Include="Scripts\ADS\Catalogo\ADS.Catalogo.Turno.js" />
+    <Content Include="Scripts\ADS\Consulta\ADS.Consulta.Aviso.js" />
+    <Content Include="Scripts\ADS\Consulta\ADS.Consulta.Historica.js" />
+    <Content Include="Scripts\ADS\Consulta\ADS.Consulta.Imagen.js" />
+    <Content Include="Scripts\ADS\Consulta\ADS.Consulta.js" />
+    <Content Include="Scripts\ADS\Consulta\ADS.Consulta.Linea.js" />
+    <Content Include="Scripts\ADS\Consulta\ADS.Consulta.Log.js" />
+    <Content Include="Scripts\ADS\Consulta\ADS.Consulta.Lote.js" />
+    <Content Include="Scripts\ADS\Example\ADS.Example.js" />
+    <Content Include="Scripts\ADS\Example\ADS.Example.Person.js" />
+    <Content Include="Scripts\ADS\Reporte\ADS.Reporte.Agrietamiento.js" />
+    <Content Include="Scripts\ADS\Reporte\ADS.Reporte.Aplastamiento.js" />
+    <Content Include="Scripts\ADS\Reporte\ADS.Reporte.CaracteristicasF.js" />
+    <Content Include="Scripts\ADS\Reporte\ADS.Reporte.Dimensional.js" />
+    <Content Include="Scripts\ADS\Reporte\ADS.Reporte.Espesores.js" />
+    <Content Include="Scripts\ADS\Reporte\ADS.Reporte.Hermeticidad.js" />
+    <Content Include="Scripts\ADS\Reporte\ADS.Reporte.Impacto.js" />
+    <Content Include="Scripts\ADS\Reporte\ADS.Reporte.js" />
+    <Content Include="Scripts\ADS\Reporte\ADS.Reporte.Reporteador.js" />
+    <Content Include="Scripts\ADS\Reporte\ADS.Reporte.Rigidez.js" />
+    <Content Include="Scripts\ADS\Reporte\ADS.Reporte.Test.js" />
+    <Content Include="Scripts\ADS\Seguridad\ADS.Seguridad.Account.js" />
+    <Content Include="Scripts\ADS\Seguridad\ADS.Seguridad.js" />
+    <Content Include="Scripts\ADS\Seguridad\ADS.Seguridad.Perfil.js" />
+    <Content Include="Scripts\ADS\Seguridad\ADS.Seguridad.PerfilMenu.js" />
+    <Content Include="Scripts\ADS\Seguridad\ADS.Seguridad.Usuario.js" />
+    <Content Include="Scripts\i18n\grid.locale-ar.js" />
+    <Content Include="Scripts\i18n\grid.locale-bg.js" />
+    <Content Include="Scripts\i18n\grid.locale-bg1251.js" />
+    <Content Include="Scripts\i18n\grid.locale-cat.js" />
+    <Content Include="Scripts\i18n\grid.locale-cn.js" />
+    <Content Include="Scripts\i18n\grid.locale-cs.js" />
+    <Content Include="Scripts\i18n\grid.locale-da.js" />
+    <Content Include="Scripts\i18n\grid.locale-de.js" />
+    <Content Include="Scripts\i18n\grid.locale-dk.js" />
+    <Content Include="Scripts\i18n\grid.locale-el.js" />
+    <Content Include="Scripts\i18n\grid.locale-en.js" />
+    <Content Include="Scripts\i18n\grid.locale-es.js" />
+    <Content Include="Scripts\i18n\grid.locale-fa.js" />
+    <Content Include="Scripts\i18n\grid.locale-fi.js" />
+    <Content Include="Scripts\i18n\grid.locale-fr.js" />
+    <Content Include="Scripts\i18n\grid.locale-gl.js" />
+    <Content Include="Scripts\i18n\grid.locale-he.js" />
+    <Content Include="Scripts\i18n\grid.locale-hr.js" />
+    <Content Include="Scripts\i18n\grid.locale-hr1250.js" />
+    <Content Include="Scripts\i18n\grid.locale-hu.js" />
+    <Content Include="Scripts\i18n\grid.locale-id.js" />
+    <Content Include="Scripts\i18n\grid.locale-is.js" />
+    <Content Include="Scripts\i18n\grid.locale-it.js" />
+    <Content Include="Scripts\i18n\grid.locale-ja.js" />
+    <Content Include="Scripts\i18n\grid.locale-kr.js" />
+    <Content Include="Scripts\i18n\grid.locale-lt.js" />
+    <Content Include="Scripts\i18n\grid.locale-mne.js" />
+    <Content Include="Scripts\i18n\grid.locale-nl.js" />
+    <Content Include="Scripts\i18n\grid.locale-no.js" />
+    <Content Include="Scripts\i18n\grid.locale-pl.js" />
+    <Content Include="Scripts\i18n\grid.locale-pt-br.js" />
+    <Content Include="Scripts\i18n\grid.locale-pt.js" />
+    <Content Include="Scripts\i18n\grid.locale-ro.js" />
+    <Content Include="Scripts\i18n\grid.locale-ru.js" />
+    <Content Include="Scripts\i18n\grid.locale-sk.js" />
+    <Content Include="Scripts\i18n\grid.locale-sr-latin.js" />
+    <Content Include="Scripts\i18n\grid.locale-sr.js" />
+    <Content Include="Scripts\i18n\grid.locale-sv.js" />
+    <Content Include="Scripts\i18n\grid.locale-th.js" />
+    <Content Include="Scripts\i18n\grid.locale-tr.js" />
+    <Content Include="Scripts\i18n\grid.locale-tw.js" />
+    <Content Include="Scripts\i18n\grid.locale-ua.js" />
+    <Content Include="Scripts\i18n\grid.locale-vi.js" />
+    <Content Include="Scripts\jquery-2.0.3.js" />
+    <Content Include="Scripts\jquery-2.0.3.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.3.js" />
+    <Content Include="Scripts\jquery-ui-1.10.3.min.js" />
+    <Content Include="Scripts\jquery-2.0.3.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.jqGrid.js" />
+    <Content Include="Scripts\jquery.jqGrid.min.js" />
+    <Content Include="Scripts\jquery.maskedinput-1.3.1.js" />
+    <Content Include="Scripts\jquery.maskedinput-1.3.1.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.3.0.debug.js" />
+    <Content Include="Scripts\knockout-2.3.0.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Nav.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\Catalogo\Views\Shared\" />
+    <Folder Include="Areas\Consulta\Views\Shared\" />
+    <Folder Include="Areas\Example\Views\Shared\" />
+    <Folder Include="Areas\Reporte\Views\Shared\" />
+    <Folder Include="Areas\Seguridad\Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADS.LAPEM.Entities\ADS.LAPEM.Entities.csproj">
+      <Project>{6cded8e7-98f1-4198-9018-6bd31c5477dc}</Project>
+      <Name>ADS.LAPEM.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADS.LAPEM.Repositories\ADS.LAPEM.Repositories.csproj">
+      <Project>{622a6939-4f34-42aa-b9c9-eeb47a613ea7}</Project>
+      <Name>ADS.LAPEM.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADS.LAPEM.Resources\ADS.LAPEM.Resources.csproj">
+      <Project>{a622527a-3306-445e-be01-1008e2d94b85}</Project>
+      <Name>ADS.LAPEM.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADS.LAPEM.Services\ADS.LAPEM.Services.csproj">
+      <Project>{490fbba5-cace-4072-8e98-ad223e6b60a5}</Project>
+      <Name>ADS.LAPEM.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Infrastructure\Report\Report1.rdlc" />
+    <Content Include="Infrastructure\Report\RpteAgrietamiento.rdlc" />
+    <Content Include="Infrastructure\Report\RpteAplastamiento.rdlc" />
+    <Content Include="Infrastructure\Report\RpteCaracteristicasF.rdlc" />
+    <Content Include="Infrastructure\Report\RpteDimensional.rdlc" />
+    <Content Include="Infrastructure\Report\RpteEspesores.rdlc" />
+    <Content Include="Infrastructure\Report\RpteHermeticidad.rdlc" />
+    <Content Include="Infrastructure\Report\RpteImpacto.rdlc" />
+    <Content Include="Infrastructure\Report\RpteRigidez.rdlc" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60589</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49596</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

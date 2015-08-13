@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{490FBBA5-CACE-4072-8E98-AD223E6B60A5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ADS.LAPEM.Services</RootNamespace>
+    <AssemblyName>ADS.LAPEM.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bsd.Common.Infrastructure, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ActualesADS\Bsd.Common.Infrastructure.1.0.5-M1\lib\net40\Bsd.Common.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Bsd.Common.Report">
+      <HintPath>..\_ActualesADS\Bsd.Common.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogo\IAtributoDService.cs" />
+    <Compile Include="Catalogo\IAvisoPruebaService.cs" />
+    <Compile Include="Catalogo\ICalibracionService.cs" />
+    <Compile Include="Catalogo\IColorService.cs" />
+    <Compile Include="Catalogo\IEnsayoEquipoService.cs" />
+    <Compile Include="Catalogo\IEnsayoService.cs" />
+    <Compile Include="Catalogo\IEquipoService.cs" />
+    <Compile Include="Catalogo\IEspecificacionService.cs" />
+    <Compile Include="Catalogo\ILineaService.cs" />
+    <Compile Include="Catalogo\ILoteService.cs" />
+    <Compile Include="Catalogo\IMedidaDiametroService.cs" />
+    <Compile Include="Catalogo\Impl\AtributoDService.cs" />
+    <Compile Include="Catalogo\Impl\AvisoPruebaService.cs" />
+    <Compile Include="Catalogo\Impl\CalibracionService.cs" />
+    <Compile Include="Catalogo\Impl\ColorService.cs" />
+    <Compile Include="Catalogo\Impl\EnsayoEquipoService.cs" />
+    <Compile Include="Catalogo\Impl\EnsayoService.cs" />
+    <Compile Include="Catalogo\Impl\EquipoService.cs" />
+    <Compile Include="Catalogo\Impl\EspecificacionService.cs" />
+    <Compile Include="Catalogo\Impl\LineaService.cs" />
+    <Compile Include="Catalogo\Impl\LoteService.cs" />
+    <Compile Include="Catalogo\Impl\MedidaDiametroService.cs" />
+    <Compile Include="Catalogo\Impl\NormaEnsayoService.cs" />
+    <Compile Include="Catalogo\Impl\NormaEnsayoValorInService.cs" />
+    <Compile Include="Catalogo\Impl\NormaEnsayoValorMmService.cs" />
+    <Compile Include="Catalogo\Impl\NormaProductoService.cs" />
+    <Compile Include="Catalogo\Impl\NormaService.cs" />
+    <Compile Include="Catalogo\Impl\PlantaService.cs" />
+    <Compile Include="Catalogo\Impl\ProductoService.cs" />
+    <Compile Include="Catalogo\Impl\ProveedorService.cs" />
+    <Compile Include="Catalogo\Impl\ResultadoDetalleService.cs" />
+    <Compile Include="Catalogo\Impl\ResultadoService.cs" />
+    <Compile Include="Catalogo\Impl\SiloService.cs" />
+    <Compile Include="Catalogo\Impl\TipoEnsayoService.cs" />
+    <Compile Include="Catalogo\Impl\TipoProductoService.cs" />
+    <Compile Include="Catalogo\Impl\TipoPruebaService.cs" />
+    <Compile Include="Catalogo\Impl\TurnoService.cs" />
+    <Compile Include="Catalogo\Impl\UnidadMedidaService.cs" />
+    <Compile Include="Catalogo\INormaEnsayoService.cs" />
+    <Compile Include="Catalogo\INormaEnsayoValorInService.cs" />
+    <Compile Include="Catalogo\INormaEnsayoValorMmService.cs" />
+    <Compile Include="Catalogo\INormaProductoService.cs" />
+    <Compile Include="Catalogo\INormaService.cs" />
+    <Compile Include="Catalogo\IPlantaService.cs" />
+    <Compile Include="Catalogo\IProductoService.cs" />
+    <Compile Include="Catalogo\IProveedorService.cs" />
+    <Compile Include="Catalogo\IResultadoDetalleService.cs" />
+    <Compile Include="Catalogo\IResultadoImagenService.cs" />
+    <Compile Include="Catalogo\IResultadoService.cs" />
+    <Compile Include="Catalogo\ISiloService.cs" />
+    <Compile Include="Catalogo\ITipoEnsayoService.cs" />
+    <Compile Include="Catalogo\ITipoProductoService.cs" />
+    <Compile Include="Catalogo\ITipoPruebaService.cs" />
+    <Compile Include="Catalogo\ITurnoService.cs" />
+    <Compile Include="Catalogo\IUnidadMedidaService.cs" />
+    <Compile Include="Common\IncidentManagerConstants.cs" />
+    <Compile Include="Example\Impl\PersonService.cs" />
+    <Compile Include="Example\IPersonService.cs" />
+    <Compile Include="Infrastructure\Exception\BaseException.cs" />
+    <Compile Include="Infrastructure\Exception\Ejemplo\PersonDoesntExistException.cs" />
+    <Compile Include="Infrastructure\ILdapService.cs" />
+    <Compile Include="Infrastructure\IMailService.cs" />
+    <Compile Include="Infrastructure\Impl\LdapService.cs" />
+    <Compile Include="Infrastructure\Impl\MailService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\IMenuService.cs" />
+    <Compile Include="Seguridad\Impl\MenuService.cs" />
+    <Compile Include="Seguridad\Impl\PerfilMenuService.cs" />
+    <Compile Include="Seguridad\Impl\PerfilService.cs" />
+    <Compile Include="Seguridad\Impl\SystemLogService.cs" />
+    <Compile Include="Seguridad\Impl\UsuarioService.cs" />
+    <Compile Include="Seguridad\IPerfilMenuService.cs" />
+    <Compile Include="Seguridad\IPerfilService.cs" />
+    <Compile Include="Seguridad\ISystemLogService.cs" />
+    <Compile Include="Seguridad\IUsuarioService.cs" />
+    <Compile Include="Web References\wsSIADportal1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADS.LAPEM.Entities\ADS.LAPEM.Entities.csproj">
+      <Project>{6cded8e7-98f1-4198-9018-6bd31c5477dc}</Project>
+      <Name>ADS.LAPEM.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADS.LAPEM.Repositories\ADS.LAPEM.Repositories.csproj">
+      <Project>{622a6939-4f34-42aa-b9c9-eeb47a613ea7}</Project>
+      <Name>ADS.LAPEM.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ADS.LAPEM.Resources\ADS.LAPEM.Resources.csproj">
+      <Project>{a622527a-3306-445e-be01-1008e2d94b85}</Project>
+      <Name>ADS.LAPEM.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="C:\Users\roberto.aguilar\Desktop\Implantación SID Penalizaciones y DC\wsSIADportal.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsSIADportal1\</RelPath>
+      <UpdateFromURL>C:\Users\roberto.aguilar\Desktop\Implantación SID Penalizaciones y DC\wsSIADportal.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ADS_LAPEM_Services_wsSIADportal1_portal</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsSIADportal1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\wsSIADportal1\wsSIADportal.wsdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

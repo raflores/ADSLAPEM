@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A622527A-3306-445E-BE01-1008E2D94B85}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ADS.LAPEM.Resources</RootNamespace>
+    <AssemblyName>ADS.LAPEM.Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bsd.Common.Infrastructure, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\_ActualesADS\Bsd.Common.Infrastructure.1.0.5-M1\lib\net40\Bsd.Common.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogo\LAPEM_Entities_Calibracion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Calibracion.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_Color.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Color.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_Equipo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Equipo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_Especificacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Especificacion.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_Linea.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Linea.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_Norma.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Norma.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_NormaEnsayo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_NormaEnsayo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_NormaProducto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_NormaProducto.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_Planta.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Planta.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_Producto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Producto.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_Proveedor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Proveedor.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_Prueba.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Prueba.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_Silo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Silo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_TipoProducto.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_TipoProducto.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_TipoPrueba.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_TipoPrueba.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogo\LAPEM_Entities_Turno.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Turno.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Example\LAPEM_Entities_Person.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Person.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Seguridad\LAPEM_Entities_Menu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Menu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\LAPEM_Entities_Perfil.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Perfil.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\LAPEM_Entities_Usuario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LAPEM_Entities_Usuario.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Calibracion.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Calibracion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Color.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Color.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Equipo.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Equipo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Especificacion.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Especificacion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Linea.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Linea.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Norma.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Norma.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_NormaEnsayo.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_NormaEnsayo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_NormaProducto.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_NormaProducto.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Planta.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Planta.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Producto.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Producto.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Proveedor.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Proveedor.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Prueba.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Prueba.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Silo.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Silo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_TipoProducto.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_TipoProducto.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_TipoPrueba.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_TipoPrueba.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo\LAPEM_Entities_Turno.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Turno.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Example\LAPEM_Entities_Person.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Person.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\LAPEM_Entities_Menu.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Menu.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\LAPEM_Entities_Perfil.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Perfil.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\LAPEM_Entities_Usuario.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LAPEM_Entities_Usuario.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

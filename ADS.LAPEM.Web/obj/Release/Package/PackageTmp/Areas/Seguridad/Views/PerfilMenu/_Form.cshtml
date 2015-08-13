@@ -1,0 +1,73 @@
+﻿@model ADS.LAPEM.Web.Areas.Seguridad.Models.PerfilMenuViewModel
+@using ADS.LAPEM.Services.Common;
+
+@using (Html.BeginForm("Create", "PerfilMenu", FormMethod.Post, new { id = "frmPerfilMenu" }))
+{
+    <p>@Html.ValidationSummary()</p>
+    <div>
+        <ul>
+            @foreach (string mensaje in Model.Mensajes)
+            { 
+                <li style="color: red">@mensaje</li>
+            }
+        </ul>
+    </div>
+    
+    if (Model.PerfilMenu.Id > 0)
+    { 
+        <p>@Html.HiddenFor(x => x.PerfilMenu.Id)</p>
+    }
+    
+    
+    <div>
+        <fieldset>
+            <legend>Permisos</legend>
+
+
+            <table>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                             @Html.Label("Perfil: ")
+                        </div>
+                    </td>
+                    <td>
+                        <div class="editor-field">
+                            @Html.ValidationMessageFor(x => x.PerfilMenu.PerfilId, "*")
+                            @Html.DropDownListFor(x => x.PerfilMenu.PerfilId, Model.Perfiles, IncidentManagerConstants.TextoDefaultCombo)                        
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <h3>Menu del Sistema</h3>
+            <table>
+                <tr>
+                    @{
+                        int count = 0;
+
+                        for (int i = 0; i <= Model.PerfilMenu.ListMenu.Count - 1; i++)
+                        {
+                            count++;
+                            if (count == 5)
+                            { 
+                                count = 0;
+                                @:</tr><tr>
+
+                            }
+                            
+                            @:<td align="right">
+                                @Model.PerfilMenu.ListMenu[i].Nombre
+                                @Html.CheckBoxFor(x => x.PerfilMenu.ListMenu[i].Activo)
+                                @Html.HiddenFor(x => x.PerfilMenu.ListMenu[i].Id)
+                            @:</td>                            
+                        }
+                        
+                      }
+                </tr>
+            </table>
+
+        </fieldset>
+    </div>
+    
+}

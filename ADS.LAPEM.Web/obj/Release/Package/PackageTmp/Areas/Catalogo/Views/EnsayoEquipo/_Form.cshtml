@@ -1,0 +1,95 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.EnsayoEquipoViewModel
+@using ADS.LAPEM.Services.Common;
+
+@{
+    ViewBag.Title = "_Form";
+}
+
+@using (Html.BeginForm("Create", "EnsayoEquipo", FormMethod.Post, new { id = "frmEnsayoEquipo" }))
+{
+    <p>@Html.ValidationSummary()</p>
+    <div>
+        <ul>
+            @foreach (string mensaje in Model.Mensajes)
+            { 
+                <li style="color: red">@mensaje</li>
+            }
+        </ul>
+    </div>
+    
+    if (Model.Equipo.Id > 0)
+    { 
+        <p>@Html.HiddenFor(x => x.Equipo.Id)</p>
+    }
+    
+    <div>
+        <fieldset>
+            <legend>ABC Equipos-Ensayo</legend>
+
+            <div class="editor-label">
+                @Html.Label("Equipo: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Equipo.Id, "*")
+                @Html.DropDownListFor(x => x.Equipo.Id, Model.Equipos, IncidentManagerConstants.TextoDefaultCombo, new { @class = "inputCombo" })
+            </div>
+
+            <br />
+            <h3>Seleccionar los ensayos realizados con el equipo elegido.</h3>
+
+            <table width="100%" align="left" cellpadding="0" cellspacing="0" class="Tabla">
+                <tr class="TablaTextoTitulo">
+                    <th align="left">Ensayo</th>
+                    <th align="center">Activo</th>
+                </tr>
+                    @{
+                            for (int i = 0; i <= Model.Equipo.Ensayos.Count - 1; i++)
+                            { 
+                                
+                                if (i % 2 == 0)
+                                {
+                                    <tr class="TablaItem">
+                                        <td>
+                                            @Model.Equipo.Ensayos[i].Nombre
+                                        </td>
+                                        <td align ="center">                                            
+                                            @Html.CheckBoxFor(x => x.Equipo.Ensayos[i].Activo)
+                                            @Html.HiddenFor(x => x.Equipo.Ensayos[i].Id)
+                                            @Html.HiddenFor(x => x.Equipo.Ensayos[i].Nombre)
+                                            @Html.HiddenFor(x => x.Equipo.Ensayos[i].Descripcion)
+                                            @Html.HiddenFor(x => x.Equipo.Ensayos[i].Activo)
+                                            @Html.HiddenFor(x => x.Equipo.Marca)
+    
+                                            @*<input type="checkbox" name="@Model.Equipo.Ensayos[i].Nombre" value="@Model.Equipo.Ensayos[i].Id">*@
+                                        </td>
+                                    </tr>      
+                                                  
+                                } else
+                                { 
+                                    <tr class="TablaItemAlterno">
+                                        <td>
+                                            @Model.Equipo.Ensayos[i].Nombre
+                                        </td>
+                                        <td align ="center">
+                                            @Html.CheckBoxFor(x => x.Equipo.Ensayos[i].Activo)
+                                            @Html.HiddenFor(x => x.Equipo.Ensayos[i].Id)
+                                            @Html.HiddenFor(x => x.Equipo.Ensayos[i].Nombre)
+                                            @Html.HiddenFor(x => x.Equipo.Ensayos[i].Descripcion)
+                                            @Html.HiddenFor(x => x.Equipo.Ensayos[i].Activo)                                            
+                                        </td>
+                                   </tr>
+                                
+                                }
+                                
+                                
+                                
+                                
+                            }
+                    }
+            </table>
+
+
+        </fieldset>
+    </div>
+
+}

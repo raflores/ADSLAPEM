@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:aop="http://www.springframework.net/aop"
+         xmlns:tx="http://www.springframework.net/tx"
+         xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/schema/objects/spring-objects.xsd
+         http://www.springframework.net/schema/aop http://www.springframework.net/schema/aop/spring-aop-1.1.xsd
+         http://www.springframework.net/schema/tx http://www.springframework.net/schema/tx/spring-tx-1.1.xsd">
+  
+  
+  <object id="PersonService" type="ADS.LAPEM.Services.Example.Impl.PersonService, ADS.LAPEM.Services">
+    <property name="PersonRepository" ref="PersonRepository" />
+  </object>
+
+  <object id="PerfilService" type="ADS.LAPEM.Services.Seguridad.Impl.PerfilService, ADS.LAPEM.Services">
+    <property name="PerfilRepository" ref="PerfilRepository" />
+  </object>
+
+  <object id="SystemLogService" type="ADS.LAPEM.Services.Seguridad.Impl.SystemLogService, ADS.LAPEM.Services">
+    <property name="SystemLogRepository" ref="SystemLogRepository" />
+  </object>
+
+  <object id="PerfilMenuService" type="ADS.LAPEM.Services.Seguridad.Impl.PerfilMenuService, ADS.LAPEM.Services">
+    <property name="PerfilMenuRepository" ref="PerfilMenuRepository" />
+  </object>
+
+  <object id="MenuService" type="ADS.LAPEM.Services.Seguridad.Impl.MenuService, ADS.LAPEM.Services">
+    <property name="MenuRepository" ref="MenuRepository" />
+  </object>
+
+  <object id="PlantaService" type="ADS.LAPEM.Services.Catalogo.Impl.PlantaService, ADS.LAPEM.Services">
+    <property name="PlantaRepository" ref="PlantaRepository" />
+  </object>
+
+  <object id="EquipoService" type="ADS.LAPEM.Services.Catalogo.Impl.EquipoService, ADS.LAPEM.Services">
+    <property name="EquipoRepository" ref="EquipoRepository" />
+  </object>
+  
+  <object id="EnsayoEquipoService" type="ADS.LAPEM.Services.Catalogo.Impl.EnsayoEquipoService, ADS.LAPEM.Services">
+    <property name="EnsayoEquipoRepository" ref="EnsayoEquipoRepository" />
+  </object>
+  
+  <object id="ColorService" type="ADS.LAPEM.Services.Catalogo.Impl.ColorService, ADS.LAPEM.Services">
+    <property name="ColorRepository" ref="ColorRepository" />
+  </object>
+
+  <object id="EspecificacionService" type="ADS.LAPEM.Services.Catalogo.Impl.EspecificacionService, ADS.LAPEM.Services">
+    <property name="EspecificacionRepository" ref="EspecificacionRepository" />
+  </object>
+
+  <object id="TurnoService" type="ADS.LAPEM.Services.Catalogo.Impl.TurnoService, ADS.LAPEM.Services">
+    <property name="TurnoRepository" ref="TurnoRepository" />
+  </object>
+
+  <object id="ProveedorService" type="ADS.LAPEM.Services.Catalogo.Impl.ProveedorService, ADS.LAPEM.Services">
+    <property name="ProveedorRepository" ref="ProveedorRepository" />
+  </object>
+  
+  <object id="LineaService" type="ADS.LAPEM.Services.Catalogo.Impl.LineaService, ADS.LAPEM.Services">
+    <property name="LineaRepository" ref="LineaRepository" />
+  </object>
+
+  <object id="LoteService" type="ADS.LAPEM.Services.Catalogo.Impl.LoteService, ADS.LAPEM.Services">
+    <property name="LoteRepository" ref="LoteRepository" />
+    <property name="ResultadoRepository" ref="ResultadoRepository" />
+  </object>
+
+  <object id="SiloService" type="ADS.LAPEM.Services.Catalogo.Impl.SiloService, ADS.LAPEM.Services">
+    <property name="SiloRepository" ref="SiloRepository" />
+  </object>
+
+  <object id="ResultadoService" type="ADS.LAPEM.Services.Catalogo.Impl.ResultadoService, ADS.LAPEM.Services">
+    <property name="ResultadoRepository" ref="ResultadoRepository" />
+  </object>
+
+  <object id="ResultadoDetalleService" type="ADS.LAPEM.Services.Catalogo.Impl.ResultadoDetalleService, ADS.LAPEM.Services">
+    <property name="ResultadoDetalleRepository" ref="ResultadoDetalleRepository" />
+  </object>
+
+  <object id="AvisoPruebaService" type="ADS.LAPEM.Services.Catalogo.Impl.AvisoPruebaService, ADS.LAPEM.Services">
+    <property name="AvisoPruebaRepository" ref="AvisoPruebaRepository" />
+  </object>
+
+  <object id="CalibracionService" type="ADS.LAPEM.Services.Catalogo.Impl.CalibracionService, ADS.LAPEM.Services">
+    <property name="CalibracionRepository" ref="CalibracionRepository" />
+  </object>
+  
+  <object id="AtributoDService" type="ADS.LAPEM.Services.Catalogo.Impl.AtributoDService, ADS.LAPEM.Services">
+    <property name="AtributoDRepository" ref="AtributoDRepository" />
+  </object>
+
+  <object id="TipoPruebaService" type="ADS.LAPEM.Services.Catalogo.Impl.TipoPruebaService, ADS.LAPEM.Services">
+    <property name="TipoPruebaRepository" ref="TipoPruebaRepository" />
+  </object>
+
+  <object id="TipoEnsayoService" type="ADS.LAPEM.Services.Catalogo.Impl.TipoEnsayoService, ADS.LAPEM.Services">
+    <property name="TipoEnsayoRepository" ref="TipoEnsayoRepository" />
+  </object>
+  
+  <object id="TipoProductoService" type="ADS.LAPEM.Services.Catalogo.Impl.TipoProductoService, ADS.LAPEM.Services">
+    <property name="TipoProductoRepository" ref="TipoProductoRepository" />
+  </object>
+
+  <object id="NormaProductoService" type="ADS.LAPEM.Services.Catalogo.Impl.NormaProductoService, ADS.LAPEM.Services">
+    <property name="NormaProductoRepository" ref="NormaProductoRepository" />
+  </object>
+
+  <object id="EnsayoService" type="ADS.LAPEM.Services.Catalogo.Impl.EnsayoService, ADS.LAPEM.Services">
+    <property name="EnsayoRepository" ref="EnsayoRepository" />
+  </object>
+
+  <object id="ReportViewerService" type="Bsd.Common.Report.Impl.ReportViewerService, Bsd.Common.Report">    
+  </object>
+  
+  <object id="NormaService" type="ADS.LAPEM.Services.Catalogo.Impl.NormaService, ADS.LAPEM.Services">
+    <property name="NormaRepository" ref="NormaRepository" />
+    <property name="ProductoRepository" ref="ProductoRepository" />
+  </object>
+  
+  <object id="LdapService" type="ADS.LAPEM.Services.Infrastructure.Impl.LdapService, ADS.LAPEM.Services">
+  </object>  
+
+  <object id="ProductoService" type="ADS.LAPEM.Services.Catalogo.Impl.ProductoService, ADS.LAPEM.Services">
+    <property name="ProductoRepository" ref="ProductoRepository" />
+    <property name="NormaRepository" ref="NormaRepository" />
+  </object>
+              
+  <object id="NormaEnsayoService" type="ADS.LAPEM.Services.Catalogo.Impl.NormaEnsayoService, ADS.LAPEM.Services">
+    <property name="NormaEnsayoRepository" ref="NormaEnsayoRepository" />
+    <property name="NormaValorInRepository" ref="NormaEnsayoValorInRepository" />
+    <property name="NormaValorMmRepository" ref="NormaEnsayoValorMmRepository" />
+  </object>
+
+  <object id="NormaEnsayoValorInService" type="ADS.LAPEM.Services.Catalogo.Impl.NormaEnsayoValorInService, ADS.LAPEM.Services">
+    <property name="NormaEnsayoValorInRepository" ref="NormaEnsayoValorInRepository" />
+  </object>
+  
+  <object id="NormaEnsayoValorMmService" type="ADS.LAPEM.Services.Catalogo.Impl.NormaEnsayoValorMmService, ADS.LAPEM.Services">
+    <property name="NormaEnsayoValorMmRepository" ref="NormaEnsayoValorMmRepository" />
+  </object>
+  
+  <object id="UnidadMedidaService" type="ADS.LAPEM.Services.Catalogo.Impl.UnidadMedidaService, ADS.LAPEM.Services">
+    <property name="UnidadMedidaRepository" ref="UnidadMedidaRepository" />
+  </object>
+
+  <object id="MedidaDiametroService" type="ADS.LAPEM.Services.Catalogo.Impl.MedidaDiametroService, ADS.LAPEM.Services">
+    <property name="MedidaDiametroRepository" ref="MedidaDiametroRepository" />
+  </object>
+
+  <object id="UsuarioService" type="ADS.LAPEM.Services.Seguridad.Impl.UsuarioService, ADS.LAPEM.Services">
+    <property name="UsuarioRepository" ref="UsuarioRepository" />
+  </object>
+ 
+
+</objects>

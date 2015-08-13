@@ -1,0 +1,11 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.PlantaViewModel
+
+@using (Html.BeginForm("Delete", "Planta", FormMethod.Post, new { id = "frmPlanta" }))
+{
+    <p>
+        Se eliminará el perfil "@Model.Planta.NombrePlanta" del Sistema.
+        ¿Desea continuar?
+    </p>
+    <p>@Html.HiddenFor(x => x.Planta.Id)</p>
+}
+

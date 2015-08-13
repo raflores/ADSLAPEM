@@ -1,0 +1,10 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.NormaProductoViewModel
+
+@using (Html.BeginForm("Delete", "NormaProducto", FormMethod.Post, new { id = "frmNormaProducto" }))
+{ 
+    <p>
+        Se eliminará la siguiente norma del Sistema "@Model.NormaProducto.Nombre".
+        ¿Desea Continuar?
+    </p>
+    <p>@Html.HiddenFor(x => x.NormaProducto.Id)</p>
+}
