@@ -1,0 +1,37 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.TurnoViewModel
+
+@{
+    ViewBag.Title = "_Form";
+}
+
+@using (Html.BeginForm("Create", "Turno", FormMethod.Post, new { id = "frmTurno" }))
+{
+     <p>@Html.ValidationSummary()</p>
+    <div>
+        <ul>
+            @foreach (string mensaje in Model.Mensajes)
+            { 
+                <li style="color: red">@mensaje</li>
+            }
+        </ul>
+    </div>
+    
+    if (Model.Turno.Id > 0)
+    { 
+        <p>@Html.HiddenFor(x => x.Turno.Id)</p>
+    }
+    
+    <div>
+        <fieldset>
+            <legend>ABC TURNO</legend>
+
+            <div class="editor-label">
+                 @Html.Label("*Nombre de Turno: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Turno.NombreTurno, "*")
+                @Html.TextBoxFor(x => x.Turno.NombreTurno, new { @class = "input150" })
+            </div>
+        </fieldset>
+    </div>
+}

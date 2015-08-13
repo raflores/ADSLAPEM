@@ -1,0 +1,45 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.NormaViewModel
+
+@{
+    ViewBag.Title = "_Form";
+}
+
+@using (Html.BeginForm("Create", "Norma", FormMethod.Post, new { id = "frmNorma" }))
+{
+    <p>@Html.ValidationSummary()</p>
+    <div>
+        <ul>
+            @foreach (string mensaje in Model.Mensajes)
+            { 
+                <li style="color: red">@mensaje</li>
+            }
+        </ul>
+    </div>
+    
+    if (Model.Norma.Id > 0)
+    { 
+        <p>@Html.HiddenFor(x => x.Norma.Id)</p>
+    }
+    
+    <div>
+        <fieldset>
+            <legend>ABC Norma</legend>
+
+            <div class="editor-label">
+                 @Html.Label("*Nombre: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Norma.Nombre, "*")
+                @Html.TextBoxFor(x => x.Norma.Nombre, new { @class = "input200" })
+            </div>
+
+            <div class="editor-label">
+                 @Html.Label("Descripción: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Norma.Descripcion, "*")
+                @Html.TextAreaFor(x => x.Norma.Descripcion, new { @class = "inputTextArea" })
+            </div>
+        </fieldset>
+    </div>
+}

@@ -1,0 +1,24 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.AvisoPruebaViewModel
+
+@using (Html.BeginForm("Captura", "AvisoPrueba", FormMethod.Post, new { id = "frmAvisoPrueba" }))
+{
+    <table>
+            <tr>
+                <td>                    
+                    @Html.Label("Cantidad: ")
+                </td>
+                <td>
+                    @Html.TextBoxFor(x => x.AvisoPrueba.Cantidad, new { @class = "input200" })
+                </td>
+            </tr>
+            <tr>
+                <td>                    
+                    @Html.Label("Lugar Destino: ")
+                </td>
+                <td>
+                    @Html.TextBoxFor(x => x.AvisoPrueba.Destino, new { @class = "input200" })
+                </td>
+            </tr>
+
+        </table>
+}

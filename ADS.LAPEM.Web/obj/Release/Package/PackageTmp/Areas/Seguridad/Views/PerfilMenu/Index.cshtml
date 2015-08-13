@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bundles/ads/seguridad")
+
+<h2>ABC Permisos</h2>
+
+<table id="grid"></table>
+<div id="pager"></div>
+<div id="dlg" title="Productos"></div>
+
+<div>
+@*   <p><input type="button" id="btnNewAjax" value="Nuevo Ajax" /></p>*@
+   <p><input type="button" id="btnNew" value="Nuevo" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" /></p>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        ADS.Seguridad.Init();
+        ADS.Seguridad.PerfilMenu.Init();
+    });
+</script>

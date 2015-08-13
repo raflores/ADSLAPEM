@@ -1,0 +1,106 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using ADS.LAPEM.Entities;
+using ADS.LAPEM.Services.Catalogo;
+using ADS.LAPEM.Web.Controllers;
+using Bsd.Common.Infrastructure.Web.Grid;
+using ADS.LAPEM.Web.Infrastructure.Grid;
+using ADS.LAPEM.Web.Areas.Catalogo.Models;
+using ADS.LAPEM.Web.Infrastructure.Filter;
+
+
+namespace ADS.LAPEM.Web.Areas.Consulta.Controllers
+{
+    public class ConsultaPorLoteController : BaseController
+    {
+        protected ILoteService LoteService { get; set; }
+        protected IResultadoService ResultadoService { get; set; }
+        //
+        // GET: /Consulta/ConsultaPorLote/
+
+        [HttpGet]
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        //[HttpPost]
+        //public ActionResult Buscar(Lote lote)
+        //{
+        //    IEnumerable<Lote> lotes = LoteService.ReadLoteByIdentificador(lote.Identificador);
+
+
+
+        //    return RedirectToAction(INDEX_VIEW);
+        //}
+
+        [HttpGet]
+        public ActionResult GetDetalle(GridSettingsWeb grid, long id)
+        {
+            GridResult<Resultado> result = ResultadoService.ReadResultado(grid);
+
+            var jsonData = new
+            {
+                total = result.TotalPages,
+                result.PageIndex,
+                records = result.TotalRecords,
+                rows = (
+                    from p in result.Rows
+                    where p.LoteId == id
+                    select new
+                    {
+                        id = p.Id,
+                        cell = new string[] { p.LoteId.ToString(),  p.NormaUM, p.ResultadoValor.ToString(), (p.Aprobado == 1 ? "Aprobado" : "Rechazado"), p.Id.ToString() }
+                    }).ToArray()
+            };
+
+            return Json(jsonData, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public ActionResult GetDetail(long id)
+        {
+            List<Resultado> result = ResultadoService.ReadResultadoByLote(id).ToList();
+
+            var jsonData = new
+            {
+                rows = (
+                    from p in result
+                    select new
+                    {
+                        cell = new string[] { p.Norma.Nombre, p.NormaEnsayo.Nombre, p.ResultadoValor.ToString(),
+                        (p.Aprobado == 1 ? "Aprobado" : "Rechazado") }
+                    }).ToArray()
+            };
+
+            return Json(jsonData, JsonRequestBehavior.AllowGet);
+
+        }
+
+        [HttpGet]
+        public ActionResult GetList(GridSettingsWeb grid)
+        {
+            GridResult<Lote> result = LoteService.ReadLote(grid);
+
+            var jsonData = new
+            {
+                total = result.TotalPages,
+                result.PageIndex,
+                records = result.TotalRecords,
+                rows = (
+                    from p in result.Rows
+                    select new
+                    {
+                        id = p.Id,
+                        cell = new string[] { p.Identificador, p.FechaProduccion.ToShortDateString(), p.Producto.Nombre, p.Producto.MedidaDiametro.ValorIn.ToString(), p.Linea.Nombre, p.Id.ToString() }
+                    }).ToArray()
+            };
+
+            return Json(jsonData, JsonRequestBehavior.AllowGet);
+        }
+
+    }
+}

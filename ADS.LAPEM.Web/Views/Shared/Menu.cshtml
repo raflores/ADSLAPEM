@@ -1,0 +1,11 @@
+﻿@model ADS.LAPEM.Web.Models.MenuViewModel
+
+<ul id="nav">
+    @foreach (var item in Model.Menu)
+    { 
+        <li>
+            @Html.ActionLink(item.Nombre, item.Action, new { area = item.Area, controller = item.Controller}, null)
+        </li>
+    }
+     
+</ul>

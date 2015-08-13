@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/xsd/spring-objects.xsd">
+
+      
+  <object id="txAdvisor" type="Spring.Aop.Support.NameMatchMethodPointcutAdvisor, Spring.Aop">
+    <property name="Advice">
+      <!--<object type="ADS.LAPEM.Infrastructure.Interceptor.TxInterceptor, ADS.LAPEM.Infrastructure">-->
+      <object type="Bsd.Common.Infrastructure.Interceptor.TxInterceptor, Bsd.Common.Infrastructure">
+        <property name="UnitOfWork" ref="UnitOfWork" />
+      </object>
+    </property>
+    <property name="MappedNames">
+      <list>
+        <value>Create*</value>
+        <value>Update*</value>
+        <value>Delete*</value>
+      </list>
+    </property>
+  </object>
+
+  <object type="Spring.Aop.Framework.AutoProxy.ObjectNameAutoProxyCreator, Spring.Aop">
+    <property name="ObjectNames">
+      <list>
+        <value>*Service</value>
+      </list>
+    </property>
+    <property name="InterceptorNames">
+      <list>
+        <value>txAdvisor</value>
+      </list>
+    </property>
+  </object>
+
+  <object id="LoggingFilter" type="ADS.LAPEM.Web.Infrastructure.Filter.LoggingFilterAttribute, ADS.LAPEM.Web" singleton="false">
+    <property name="SystemLogService" ref="SystemLogService" />
+    <property name="UsuarioService" ref="UsuarioService" />
+  </object>
+  
+</objects>

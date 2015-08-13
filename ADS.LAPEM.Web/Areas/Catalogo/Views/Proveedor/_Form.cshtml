@@ -1,0 +1,98 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.ProveedorViewModel
+
+@using (Html.BeginForm("Create", "Proveedor", FormMethod.Post, new { id = "frmProveedor" }))
+{ 
+    <p>@Html.ValidationSummary()</p>
+    <div>
+        <ul>
+            @foreach (string mensaje in Model.Mensajes)
+            { 
+                <li style="color: red">@mensaje</li>
+            }
+        </ul>
+    </div>
+    
+    if (Model.Proveedor.Id > 0)
+    { 
+        <p>@Html.HiddenFor(x => x.Proveedor.Id)</p>
+    }
+    
+    <div>
+        <fieldset>
+            <legend>ABC Proveedor</legend>
+
+            <div class="editor-label">
+                 @Html.Label("*Nombre: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Proveedor.Nombre, "*")
+                @Html.TextBoxFor(x => x.Proveedor.Nombre, new { @class = "input200" })
+            </div>
+
+            <div class="editor-label">
+                 @Html.Label("Giro: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Proveedor.Giro, "*")
+                @Html.TextBoxFor(x => x.Proveedor.Giro, new { @class = "input150" })
+            </div>
+
+            <div class="editor-label">
+                 @Html.Label("*RFC: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Proveedor.RFC, "*")
+                @Html.TextBoxFor(x => x.Proveedor.RFC, new { @class = "input150" })
+            </div>
+
+            <div class="editor-label">
+                 @Html.Label("*Dirección: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Proveedor.Direccion, "*")
+                @Html.TextAreaFor(x => x.Proveedor.Direccion, new { @class = "inputTextArea" })
+            </div>
+
+            <div class="editor-label">
+                 @Html.Label("*Ciudad: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Proveedor.Ciudad, "*")
+                @Html.TextBoxFor(x => x.Proveedor.Ciudad, new { @class = "input150" })
+            </div>
+
+            <div class="editor-label">
+                 @Html.Label("*Estado: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Proveedor.Estado, "*")
+                @Html.TextBoxFor(x => x.Proveedor.Estado, new { @class = "input150" })
+            </div>
+
+            <div class="editor-label">
+                 @Html.Label("Correo del Contacto: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Proveedor.CorreoContacto, "*")
+                @Html.TextBoxFor(x => x.Proveedor.CorreoContacto, new { @class = "input200" })
+            </div>
+
+            <div class="editor-label">
+                 @Html.Label("Nombre Contacto: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Proveedor.NombreContacto, "*")
+                @Html.TextBoxFor(x => x.Proveedor.NombreContacto, new { @class = "input200" })
+            </div>
+
+            <div class="editor-label">
+                 @Html.Label("Telefono Contacto: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.Proveedor.TelContacto, "*")
+                @Html.TextBoxFor(x => x.Proveedor.TelContacto, new { @class = "input150" })
+            </div>
+        </fieldset>
+
+    </div>
+}

@@ -1,0 +1,65 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.NormaEnsayoViewModel
+@using ADS.LAPEM.Services.Common;
+
+@{
+    ViewBag.Title = "_Form";
+}
+
+@using (Html.BeginForm("Create", "NormaEnsayo", FormMethod.Post, new { id = "frmNormaEnsayo" }))
+{
+    <p>@Html.ValidationSummary()</p>
+    <div>
+        <ul>
+            @foreach (string mensaje in Model.Mensajes)
+            { 
+                <li style="color: red">@mensaje</li>
+            }
+        </ul>
+    </div>
+    
+    if (Model.NormaEnsayo.Id > 0)
+    { 
+        <p>@Html.HiddenFor(x => x.NormaEnsayo.Id)</p>
+    }
+    
+    <div>
+        <fieldset>
+            <legend>ABC Norma Ensayo</legend>
+
+            <table>                
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                             @Html.Label("*Nombre Norma de Ensayo: ")
+                        </div>
+                    </td>
+                    <td>
+                        <div class="editor-field">
+                            @Html.ValidationMessageFor(x => x.NormaEnsayo.Nombre, "*")
+                            @Html.TextBoxFor(x => x.NormaEnsayo.Nombre, new { @class = "input150" })    
+                        </div>
+                    </td>
+                    <td colspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                             @Html.Label("Descripción: ")
+                        </div>
+                    </td>
+                    <td>
+                        <div class="editor-field">
+                            @Html.ValidationMessageFor(x => x.NormaEnsayo.Descripcion, "*")
+                            @Html.TextAreaFor(x => x.NormaEnsayo.Descripcion, new { @class = "inputTextArea" })    
+                        </div>
+                    </td>
+                    <td colspan="3">&nbsp;</td>
+                </tr>                
+            </table>
+            <br />            
+        </fieldset>
+    </div>
+    
+    
+
+}
