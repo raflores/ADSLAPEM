@@ -1,0 +1,72 @@
+﻿@model ADS.LAPEM.Web.Areas.Consulta.Models.LoteViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bundles/ads/consulta")
+
+<div class="wrapper">
+		<div class="tituloSeccion">
+			Consulta por Lote
+		</div>
+		<div class="lineaVerde">
+		</div>
+		
+</div>	
+<br />
+
+@using (Html.BeginForm("Consulta", "ConsultaPorLote", FormMethod.Post, new { id = "FrmConsultaLote" }))
+{ 
+    <table border="1">
+        <tr>
+            <td>
+                Filtro Búsqueda:
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table id="busqueda">
+                    <tr>
+                        <td>                    
+                            @Html.Label("Lote: ")
+                        </td>
+                        <td>
+                            @Html.TextBoxFor(x => x.Lote.Identificador, new { data_rules_field = "Identificador", data_rules_op = "cn", data_search = true, @class = "input200" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>        
+                    </tr>  
+                    <tr>
+                        <td colspan="2">                               
+                            <input type="button" id="btnConsulta" value="Consultar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" />                           
+                        </td>
+                    </tr>
+                  </table>
+            </td>
+        </tr>
+    </table>
+        
+    
+    
+    <div style="width:1024px; padding-left:initial; margin-top:10px">
+        <table id="grid"></table>
+        
+        <div id="pager"></div>
+    </div>
+    <div id="dlg" title="Detalle del Lote">
+        
+    </div>
+
+}
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        ADS.Consulta.Init();
+        ADS.Consulta.Lote.Init();
+    });
+</script>

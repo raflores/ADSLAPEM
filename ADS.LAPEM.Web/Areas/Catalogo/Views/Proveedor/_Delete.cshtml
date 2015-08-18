@@ -1,0 +1,10 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.ProveedorViewModel
+
+@using (Html.BeginForm("Delete", "Proveedor", FormMethod.Post, new { id = "frmProveedor" }))
+{
+    <p>
+        El proveedor "@Model.Proveedor.Nombre" será eliminado del Sistema.
+        ¿Desea continuar?
+    </p>
+    <p>@Html.HiddenFor(x => x.Proveedor.Id)</p>
+}

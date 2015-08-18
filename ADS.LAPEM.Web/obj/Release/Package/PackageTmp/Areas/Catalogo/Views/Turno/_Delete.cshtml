@@ -1,0 +1,10 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.TurnoViewModel
+
+@using (Html.BeginForm("Delete", "Turno", FormMethod.Post, new { id = "frmTurno" }))
+{ 
+    <p>
+        Se eliminará del sistema el turno "@Model.Turno.NombreTurno".
+        ¿Desea Continuar?
+    </p>
+    <p>@Html.HiddenFor(x => x.Turno.Id)</p>
+}

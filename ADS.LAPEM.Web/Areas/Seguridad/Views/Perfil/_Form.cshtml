@@ -1,0 +1,162 @@
+﻿@model ADS.LAPEM.Web.Areas.Seguridad.Models.PerfilViewModel
+
+
+@using (Html.BeginForm("Create", "Perfil", FormMethod.Post, new { id = "frmPerfil" }))
+{ 
+    <p>@Html.ValidationSummary()</p>
+    <div>
+        <ul>
+            @foreach (string mensaje in Model.Mensajes)
+            { 
+                <li style="color: red">@mensaje</li>
+            }
+        </ul>
+    </div>
+    
+    if (Model.Perfil.Id > 0)
+    { 
+        <p>@Html.HiddenFor(x => x.Perfil.Id)</p>
+    }
+    
+    <div>
+        <fieldset>
+            <legend>ABC Perfil</legend>
+            <table>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                             @Html.Label("*Nombre: ")
+                        </div>
+                    </td>
+                    <td>
+                        <div class="editor-field">
+                            @Html.ValidationMessageFor(x => x.Perfil.Nombre, "*")
+                            @Html.TextBoxFor(x => x.Perfil.Nombre, new { @class = "input150" })
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                             @Html.Label("Descripción: ")
+                        </div>
+                    </td>
+                    <td>
+                        <div class="editor-field">
+                            @Html.ValidationMessageFor(x => x.Perfil.Descripcion, "*")
+                            @Html.TextAreaFor(x => x.Perfil.Descripcion, new { @class = "inputTextArea" })
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <h3>Pantallas de Permiso</h3>
+
+
+            <table width="100%" align="left" cellpadding="0" cellspacing="0" class="Tabla">
+                <tr class="TablaTextoTitulo">
+                    <th align="left">Modulo</th>
+                    <th align="left">Nombre</th>
+                    <th align="center">Activo</th>
+                </tr>
+                 @{
+                        for (int i = 0; i <= Model.Perfil.PerfilMenu.Count - 1; i++)
+                        {
+                            if (i % 2 == 0)
+                            {
+                                <tr class="TablaItem">
+                                    <td>
+                                        @if(@Model.Perfil.PerfilMenu[i].MenuId > 0 && @Model.Perfil.PerfilMenu[i].MenuId <= 7)
+                                        {
+                                            @Html.Label("Menú Padre")
+                                        }
+                                        else if(@Model.Perfil.PerfilMenu[i].MenuId > 7 && @Model.Perfil.PerfilMenu[i].MenuId <= 23)
+                                        {
+                                            @Html.Label("Catalogos")
+                                        }
+                                        else if(@Model.Perfil.PerfilMenu[i].MenuId > 23 && @Model.Perfil.PerfilMenu[i].MenuId <= 28)
+                                        {
+                                            @Html.Label("Consultas")
+                                        }
+                                        else if(@Model.Perfil.PerfilMenu[i].MenuId > 28 && @Model.Perfil.PerfilMenu[i].MenuId <= 35)
+                                        {
+                                            @Html.Label("Reportes")
+                                        }
+                                        else
+                                        {                                            
+                                            @Html.Label("Seguridad")
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (@Model.Perfil.PerfilMenu[i].Menu == null)
+                                        { 
+                                            @Model.Perfil.PerfilMenu[i].Nombre 
+                                        }
+                                        else
+                                        {
+                                            @Model.Perfil.PerfilMenu[i].Menu.Nombre
+                                        }
+                                    </td>
+                                    <td>
+                                        @Html.CheckBoxFor(x => x.Perfil.PerfilMenu[i].Activo)
+                                        @Html.HiddenFor(x => x.Perfil.PerfilMenu[i].Nombre)
+                                        @Html.HiddenFor(x => x.Perfil.PerfilMenu[i].Id)
+                                        @Html.HiddenFor(x => x.Perfil.PerfilMenu[i].PerfilId)
+                                        @Html.HiddenFor(x => x.Perfil.PerfilMenu[i].MenuId)
+                                    </td>
+                                </tr>
+                            }
+                            else
+                            { 
+                                <tr class="TablaItemAlterno">
+                                    <td>
+                                        @if(@Model.Perfil.PerfilMenu[i].MenuId > 0 && @Model.Perfil.PerfilMenu[i].MenuId <= 7)
+                                        {
+                                            @Html.Label("Menú Padre")
+                                        }
+                                        else if(@Model.Perfil.PerfilMenu[i].MenuId > 7 && @Model.Perfil.PerfilMenu[i].MenuId <= 23)
+                                        {
+                                            @Html.Label("Catalogos")
+                                        }
+                                        else if(@Model.Perfil.PerfilMenu[i].MenuId > 23 && @Model.Perfil.PerfilMenu[i].MenuId <= 28)
+                                        {
+                                            @Html.Label("Consultas")
+                                        }
+                                        else if(@Model.Perfil.PerfilMenu[i].MenuId > 28 && @Model.Perfil.PerfilMenu[i].MenuId <= 35)
+                                        {
+                                            @Html.Label("Reportes")
+                                        }
+                                        else
+                                        {                                            
+                                            @Html.Label("Seguridad")
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (@Model.Perfil.PerfilMenu[i].Menu == null)
+                                        { 
+                                            @Model.Perfil.PerfilMenu[i].Nombre 
+                                        }
+                                        else
+                                        {
+                                            @Model.Perfil.PerfilMenu[i].Menu.Nombre
+                                        }
+                                    </td>
+                                    <td>
+                                        @Html.CheckBoxFor(x => x.Perfil.PerfilMenu[i].Activo)
+                                        @Html.HiddenFor(x => x.Perfil.PerfilMenu[i].Nombre)
+                                        @Html.HiddenFor(x => x.Perfil.PerfilMenu[i].Id)
+                                        @Html.HiddenFor(x => x.Perfil.PerfilMenu[i].PerfilId)
+                                        @Html.HiddenFor(x => x.Perfil.PerfilMenu[i].MenuId)
+                                    </td>
+                                </tr>
+                            }
+        
+                        }
+                 }
+            </table>
+
+
+            
+        </fieldset>
+    </div>   
+}

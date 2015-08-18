@@ -1,0 +1,23 @@
+﻿@model ADS.LAPEM.Web.Areas.Seguridad.Models.PerfilMenuViewModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bundles/ads/seguridad")
+
+<h2>Create</h2>
+
+<div>
+    @{ Html.RenderPartial("_Form", Model); }
+</div>
+
+<input type="button" id="btnCreate" value="Ok" />
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        ADS.Seguridad.Init();
+        ADS.Seguridad.PerfilMenu.Init();
+    });
+</script>

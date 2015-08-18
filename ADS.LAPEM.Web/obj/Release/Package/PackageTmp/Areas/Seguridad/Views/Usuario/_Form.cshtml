@@ -1,0 +1,113 @@
+﻿@model ADS.LAPEM.Web.Areas.Seguridad.Models.UsuarioViewModel
+@using ADS.LAPEM.Services.Common;
+
+@using (Html.BeginForm("Create", "Usuario", FormMethod.Post, new { id = "frmUsuario" }))
+{ 
+    <p>@Html.ValidationSummary()</p>
+    <div>
+        <ul>
+            @foreach (string mensaje in Model.Mensajes)
+            { 
+                <li style="color: red">@mensaje</li>
+            }
+        </ul>
+    </div>
+    
+    if (Model.Usuario.Id > 0)
+    { 
+        <p>@Html.HiddenFor(x => x.Usuario.Id)</p>
+    }
+    
+    <div>
+        <fieldset>
+            <legend>ABC Usuario</legend>
+
+            <table>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                              @Html.Label("Nombre: ")
+                        </div>
+                    </td>
+                    <td>
+                        <div class="editor-field">
+                            @Html.ValidationMessageFor(x => x.Usuario.Nombre, "*")
+                            @Html.TextBoxFor(x => x.Usuario.Nombre, new { @class = "input200" })
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                              @Html.Label("Username: ")
+                        </div>
+                    </td>
+                    <td>
+                        <div class="editor-field">
+                            @Html.ValidationMessageFor(x => x.Usuario.Username, "*")
+                            @Html.TextBoxFor(x => x.Usuario.Username, new { @class = "input150" })
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                              @Html.Label("Planta: ")
+                        </div>
+                    </td>
+                    <td>
+                        <div class="editor-field">
+                            @Html.ValidationMessageFor(x => x.Usuario.PlantaId, "*")
+                            @Html.DropDownListFor(x => x.Usuario.PlantaId, Model.Plantas, IncidentManagerConstants.TextoDefaultCombo, new { @class = "inputCombo" })
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                              @Html.Label("Puesto: ")
+                        </div>
+                    </td>
+                    <td>
+                        <div class="editor-field">
+                            @Html.ValidationMessageFor(x => x.Usuario.Puesto, "*")
+                            @Html.TextBoxFor(x => x.Usuario.Puesto, new { @class = "input150" })
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                              @Html.Label("Email: ")
+                        </div>
+                    </td>
+                    <td>
+                        <div class="editor-field">
+                            @Html.ValidationMessageFor(x => x.Usuario.Email, "*")
+                            @Html.TextBoxFor(x => x.Usuario.Email, new { @class = "input200" })
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="editor-label">
+                              @Html.Label("Perfil Id: ")
+                        </div>
+                    </td>
+                    <td>
+                        <div class="editor-field">
+                            @Html.ValidationMessageFor(x => x.Usuario.PerfilId, "*")
+                            @Html.DropDownListFor(x => x.Usuario.PerfilId, Model.Perfiles, IncidentManagerConstants.TextoDefaultCombo, new { @class = "inputCombo" })
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>       
+        
+    </div>
+    
+    
+    
+    
+    
+}

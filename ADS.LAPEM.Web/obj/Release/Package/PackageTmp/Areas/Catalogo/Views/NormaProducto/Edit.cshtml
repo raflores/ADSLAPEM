@@ -1,0 +1,24 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.NormaProductoViewModel
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Scripts.Render("~/bundles/ads/catalogo")
+
+<h2>Editar Norma Producto</h2>
+
+<div>
+    @{ Html.RenderPartial("_Form", Model); }
+</div>
+
+<input type="button" id="btnEdit" value="Guardar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" />
+<input type="button" id="btnCancelar" value="Cancelar" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" />
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        ADS.Catalogo.Init();
+        ADS.Catalogo.NormaProducto.Init();
+    });
+</script>

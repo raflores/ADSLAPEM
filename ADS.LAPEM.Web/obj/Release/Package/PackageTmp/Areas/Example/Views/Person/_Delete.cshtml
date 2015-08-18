@@ -1,0 +1,10 @@
+﻿@model ADS.LAPEM.Web.Areas.Example.Models.PersonViewModel
+
+@using (Html.BeginForm("Delete", "Person", FormMethod.Post, new { id = "frmPerson" }))
+{
+    <p>
+        Se eliminará @Model.Person.Firstname @Model.Person.Lastname del Sistema.
+        ¿Desea continuar?
+    </p>
+    <p>@Html.HiddenFor(x => x.Person.Id)</p>
+}

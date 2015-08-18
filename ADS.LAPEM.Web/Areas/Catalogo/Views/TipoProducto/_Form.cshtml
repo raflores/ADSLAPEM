@@ -1,0 +1,47 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.TipoProductoViewModel
+
+@{
+    ViewBag.Title = "_Form";
+}
+
+@using (Html.BeginForm("Create", "TipoProducto", FormMethod.Post, new { id = "frmTipoProducto" }))
+{ 
+    <p>@Html.ValidationSummary()</p>
+    
+    <div>
+        <ul>
+            @foreach (string mensaje in Model.Mensajes)
+            { 
+                <li style="color: red">@mensaje</li>
+            }
+        </ul>
+    </div>
+    
+    if (Model.TipoProducto.Id > 0)
+    { 
+        <p>@Html.HiddenFor(x => x.TipoProducto.Id)</p>
+    }
+    
+    <div>
+        <fieldset>
+            <legend>ABC Tipo Producto</legend>
+
+            <div class="editor-label">
+                 @Html.Label("*Nombre: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.TipoProducto.Nombre, "*")
+                @Html.TextBoxFor(x => x.TipoProducto.Nombre, new { @class = "input150" })
+            </div>
+
+            <div class="editor-label">
+                 @Html.Label("Descripcion: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.TipoProducto.Descripcion, "*")
+                @Html.TextAreaFor(x => x.TipoProducto.Descripcion, new { @class = "inputTextArea" })
+            </div>
+        </fieldset>
+        
+    </div>
+}

@@ -1,0 +1,79 @@
+﻿@model ADS.LAPEM.Web.Areas.Catalogo.Models.NormaProductoViewModel
+@using ADS.LAPEM.Services.Common;
+
+@{
+    ViewBag.Title = "_Form";
+}
+
+@using (Html.BeginForm("Create", "NormaProducto", FormMethod.Post, new { id = "frmNormaProducto" }))
+{
+    <p>@Html.ValidationSummary()</p>
+    <div>
+        <ul>
+            @foreach (string mensaje in Model.Mensajes)
+            { 
+                <li style="color: red">@mensaje</li>
+            }
+        </ul>
+    </div>
+    
+    if (Model.NormaProducto.Id > 0)
+    { 
+        <p>@Html.HiddenFor(x => x.NormaProducto.Id)</p>
+    }
+    
+    <div>
+        <fieldset>
+            <legend>ABC Normas Productos</legend>
+
+            <div class="editor-label">
+                @Html.Label("Producto: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.NormaProducto.ProductoId, "*")
+                @Html.DropDownListFor(x => x.NormaProducto.ProductoId, Model.Productos, IncidentManagerConstants.TextoDefaultCombo, new { @class = "inputCombo" })
+            </div>
+            <div class="editor-label">
+                @Html.Label("Nombre Norma Producto: ")
+            </div>
+            <div class="editor-field">
+                @Html.ValidationMessageFor(x => x.NormaProducto.Nombre, "*")
+                            @Html.TextBoxFor(x => x.NormaProducto.Nombre, new { @class = "input200" })  
+            </div>
+            <br />
+            <div class="editor-label">
+                @Html.Label("Seleccionar las Normas de Ensayo que corresponden al producto: ", new { @class = "labelBold" })
+            </div>
+            <br />
+            <div>
+                <table>
+                    <tr>
+                        @{
+                                int count = 0;
+
+                                for (int i = 0; i <= Model.NormaProducto.Normas.Count - 1; i++)
+                                {
+                                    count++;
+                                    if (count == 4)
+                                    { 
+                                        count = 0;
+                                        @:</tr><tr>
+
+                                    }
+                                    
+                                    @:<td align="right">
+                                        @Model.NormaProducto.Normas[i].Nombre
+                                        @Html.CheckBoxFor(x => x.NormaProducto.Normas[i].Activo)
+                                        @Html.HiddenFor(x => x.NormaProducto.Normas[i].Id)
+                                        @Html.HiddenFor(x => x.NormaProducto.Normas[i].Nombre)
+                                    @:</td>
+                                    
+                                }
+                            
+                        }
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+    </div>
+}

@@ -16,4 +16,3 @@ C:\ramiro\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Resources.pdb
 C:\ramiro\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.csprojResolveAssemblyReference.cache
 C:\ramiro\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.dll
 C:\ramiro\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.pdb
-C:\ADSLAPEM\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.csprojResolveAssemblyReference.cache

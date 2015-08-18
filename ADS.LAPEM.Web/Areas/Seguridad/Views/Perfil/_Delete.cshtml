@@ -1,0 +1,11 @@
+﻿@model ADS.LAPEM.Web.Areas.Seguridad.Models.PerfilViewModel
+
+@using (Html.BeginForm("Delete", "Perfil", FormMethod.Post, new { id = "frmPerfil" }))
+{
+    <p>
+        Se eliminará el perfil "@Model.Perfil.Nombre" del Sistema.
+        ¿Desea continuar?
+    </p>
+    <p>@Html.HiddenFor(x => x.Perfil.Id)</p>
+}
+
