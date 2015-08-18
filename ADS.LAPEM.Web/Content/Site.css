@@ -226,6 +226,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+    margin-top:10px;
 }
 /* End of Eric Meyer's CSS Reset */
 
@@ -241,7 +242,7 @@ body {
 	height: 100%;
 }
 .wrapper {
-	width: 1000px;
+	width: 1040px;
 	margin: 0 auto;
 	min-height: 100%;
 	height: auto !important;
@@ -282,7 +283,7 @@ body {
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-	width: 1000px;
+	width: 1024px;
 	margin: -100px auto 0;
 	height: auto;
 	background: #F2F2F2;
@@ -489,7 +490,7 @@ nav
 {
 	background-color: #8ec742;
 	height: 2px;
-	width: 960px;
+	width: 1024px;
 	margin: 5px auto 5px auto;
 }
 
@@ -699,12 +700,12 @@ nav
 	font-family: arial;
 	font-size: 24px;
 	font-weight: normal;
-	margin-top: 50px; 
+	margin-top: 10px; 
 }
 
 .wrapper
 {
-	width: 960px;
+	width: 1024px;
 	margin: 0 auto;
 }
 

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ADS.LAPEM.Entities;
+using System.Web.Security;
 using ADS.LAPEM.Services.Seguridad;
 using ADS.LAPEM.Services.Catalogo;
 using ADS.LAPEM.Web.Controllers;
@@ -93,20 +94,18 @@ namespace ADS.LAPEM.Web.Areas.Seguridad.Controllers
         //[HttpGet]
         //public JsonResult GetUsuarioLDAP(string nombre)
         //{
-        //    UserPrincipal userPrincipal = LdapService.Read(nombre);
-            
-
-        //    if (userPrincipal != null)
-        //    {
-        //        var json = new { AccountName = userPrincipal.SamAccountName, success = true };
-        //        return Json(json, JsonRequestBehavior.AllowGet);
-        //    }
-        //    else
-        //    {
-        //        var json = new { Mensaje = "No se encontró el usuario", success = false };
-        //        return Json(json, JsonRequestBehavior.AllowGet);
-        //    }            
+        //Usuario userPrincipal = LdapService.Read(nombre)
+        //if (userPrincipal != null)
+        //{
+        //var json = new { AccountName = userPrincipal.SamAccountName, success = true };
+        //return Json(json, JsonRequestBehavior.AllowGet);
         //}
+        //else
+        //{
+        //var json = new { Mensaje = "No se encontró el usuario", success = false };
+        //return Json(json, JsonRequestBehavior.AllowGet);
+        //  }            
+       //}
         
 
         [HttpPost]
