@@ -21,3 +21,14 @@ C:\ramiro\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Resources.pdb
 C:\ramiro\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.csprojResolveAssemblyReference.cache
 C:\ramiro\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.dll
 C:\ramiro\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.pdb
+C:\ADSLAPEM-DES\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.csprojResolveAssemblyReference.cache
+C:\ADSLAPEM-DES\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Entities.dll
+C:\ADSLAPEM-DES\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Entities.pdb
+C:\ADSLAPEM-DES\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Resources.dll
+C:\ADSLAPEM-DES\ADS.LAPEM.Entities\bin\Debug\Bsd.Common.Infrastructure.dll
+C:\ADSLAPEM-DES\ADS.LAPEM.Entities\bin\Debug\DataAnnotationsExtensions.ClientValidation.dll
+C:\ADSLAPEM-DES\ADS.LAPEM.Entities\bin\Debug\DataAnnotationsExtensions.dll
+C:\ADSLAPEM-DES\ADS.LAPEM.Entities\bin\Debug\WebActivator.dll
+C:\ADSLAPEM-DES\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Resources.pdb
+C:\ADSLAPEM-DES\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.dll
+C:\ADSLAPEM-DES\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.pdb

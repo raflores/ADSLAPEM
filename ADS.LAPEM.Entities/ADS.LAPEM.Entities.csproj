@@ -30,15 +30,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ADS.LAPEM.Entities">
+      <HintPath>..\_ActualesADS\ADS.LAPEM.Entities.dll</HintPath>
+    </Reference>
     <Reference Include="Bsd.Common.Infrastructure, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\_ActualesADS\Bsd.Common.Infrastructure.1.0.5-M1\lib\net40\Bsd.Common.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="DataAnnotationsExtensions">
-      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\DataAnnotationsExtensions.dll</HintPath>
+      <HintPath>..\_ActualesADS\DataAnnotationsExtensions.dll</HintPath>
     </Reference>
     <Reference Include="DataAnnotationsExtensions.ClientValidation">
-      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\DataAnnotationsExtensions.ClientValidation.dll</HintPath>
+      <HintPath>..\_ActualesADS\DataAnnotationsExtensions.ClientValidation.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -49,7 +52,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="WebActivator">
-      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\WebActivator.dll</HintPath>
+      <HintPath>..\_ActualesADS\WebActivator.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
