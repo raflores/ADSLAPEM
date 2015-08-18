@@ -30,10 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ADS.LAPEM.Resources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\_ActualesADS\ADS.LAPEM.Resources.dll</HintPath>
-    </Reference>
     <Reference Include="Bsd.Common.Infrastructure, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\_ActualesADS\Bsd.Common.Infrastructure.1.0.5-M1\lib\net40\Bsd.Common.Infrastructure.dll</HintPath>
