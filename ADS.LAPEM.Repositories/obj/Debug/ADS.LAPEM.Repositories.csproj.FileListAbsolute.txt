@@ -52,6 +52,7 @@ C:\ADSLAPEM-DES\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migratio
 C:\ADSLAPEM-DES\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.csproj.GenerateResource.Cache
 C:\ADSLAPEM-DES\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.dll
 C:\ADSLAPEM-DES\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.pdb
+<<<<<<< HEAD
 C:\proyecto ADS\ADS.LAPEM.Repositories\bin\Debug\ADS.LAPEM.Repositories.dll.config
 C:\proyecto ADS\ADS.LAPEM.Repositories\bin\Debug\ADS.LAPEM.Repositories.dll
 C:\proyecto ADS\ADS.LAPEM.Repositories\bin\Debug\ADS.LAPEM.Repositories.pdb
@@ -80,3 +81,32 @@ C:\proyecto ADS\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migratio
 C:\proyecto ADS\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.csproj.GenerateResource.Cache
 C:\proyecto ADS\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.dll
 C:\proyecto ADS\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.pdb
+=======
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\ADS.LAPEM.Repositories.dll.config
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\ADS.LAPEM.Repositories.dll
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\ADS.LAPEM.Repositories.pdb
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\ADS.LAPEM.Entities.dll
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\ADS.LAPEM.Resources.dll
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\Bsd.Common.Infrastructure.dll
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\EntityFramework.dll
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\WebActivator.dll
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\DataAnnotationsExtensions.ClientValidation.dll
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\DataAnnotationsExtensions.dll
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\ADS.LAPEM.Entities.pdb
+C:\ADSLAPEM\ADS.LAPEM.Repositories\bin\Debug\ADS.LAPEM.Resources.pdb
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.csprojResolveAssemblyReference.cache
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migrations.CreateDataBase.resources
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migrations.CreacionValidacionesEntities.resources
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migrations.MyMigration.resources
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migrations.ChangeProducto.resources
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migrations.ChangeResultadoEquipo.resources
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migrations.ChangeLog.resources
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migrations.MyMigration1.resources
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migrations.MyMigration2.resources
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migrations.ChangeNorma.resources
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migrations.ChangeColor.resources
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.Migrations.AddFileContentCalibracion.resources
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.csproj.GenerateResource.Cache
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.dll
+C:\ADSLAPEM\ADS.LAPEM.Repositories\obj\Debug\ADS.LAPEM.Repositories.pdb
+>>>>>>> 63ff104a15bd868bcd3faee7b124649ed5736d2f

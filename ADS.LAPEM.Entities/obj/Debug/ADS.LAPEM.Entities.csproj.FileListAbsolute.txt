@@ -32,6 +32,7 @@ C:\ADSLAPEM-DES\ADS.LAPEM.Entities\bin\Debug\WebActivator.dll
 C:\ADSLAPEM-DES\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Resources.pdb
 C:\ADSLAPEM-DES\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.dll
 C:\ADSLAPEM-DES\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.pdb
+<<<<<<< HEAD
 C:\proyecto ADS\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Entities.dll
 C:\proyecto ADS\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Entities.pdb
 C:\proyecto ADS\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Resources.dll
@@ -44,3 +45,16 @@ C:\proyecto ADS\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Resources.pdb
 C:\proyecto ADS\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.csprojResolveAssemblyReference.cache
 C:\proyecto ADS\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.dll
 C:\proyecto ADS\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.pdb
+=======
+C:\ADSLAPEM\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Entities.dll
+C:\ADSLAPEM\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Entities.pdb
+C:\ADSLAPEM\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Resources.dll
+C:\ADSLAPEM\ADS.LAPEM.Entities\bin\Debug\Bsd.Common.Infrastructure.dll
+C:\ADSLAPEM\ADS.LAPEM.Entities\bin\Debug\DataAnnotationsExtensions.ClientValidation.dll
+C:\ADSLAPEM\ADS.LAPEM.Entities\bin\Debug\DataAnnotationsExtensions.dll
+C:\ADSLAPEM\ADS.LAPEM.Entities\bin\Debug\WebActivator.dll
+C:\ADSLAPEM\ADS.LAPEM.Entities\bin\Debug\ADS.LAPEM.Resources.pdb
+C:\ADSLAPEM\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.csprojResolveAssemblyReference.cache
+C:\ADSLAPEM\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.dll
+C:\ADSLAPEM\ADS.LAPEM.Entities\obj\Debug\ADS.LAPEM.Entities.pdb
+>>>>>>> 63ff104a15bd868bcd3faee7b124649ed5736d2f

@@ -35,6 +35,7 @@ C:\ADSLAPEM-DES\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Services.XmlSerializers.d
 C:\ADSLAPEM-DES\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.csprojResolveAssemblyReference.cache
 C:\ADSLAPEM-DES\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.dll
 C:\ADSLAPEM-DES\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.pdb
+<<<<<<< HEAD
 C:\proyecto ADS\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Services.dll.config
 C:\proyecto ADS\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Services.dll
 C:\proyecto ADS\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Services.pdb
@@ -55,3 +56,24 @@ C:\proyecto ADS\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Services.XmlSerializers.d
 C:\proyecto ADS\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.csprojResolveAssemblyReference.cache
 C:\proyecto ADS\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.dll
 C:\proyecto ADS\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.pdb
+=======
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Services.dll.config
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Services.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Services.pdb
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Entities.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Repositories.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Resources.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\Bsd.Common.Infrastructure.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\Bsd.Common.Report.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\WebActivator.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\DataAnnotationsExtensions.ClientValidation.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\EntityFramework.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\DataAnnotationsExtensions.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Entities.pdb
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Repositories.pdb
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Resources.pdb
+C:\ADSLAPEM\ADS.LAPEM.Services\bin\Debug\ADS.LAPEM.Services.XmlSerializers.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.csprojResolveAssemblyReference.cache
+C:\ADSLAPEM\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.dll
+C:\ADSLAPEM\ADS.LAPEM.Services\obj\Debug\ADS.LAPEM.Services.pdb
+>>>>>>> 63ff104a15bd868bcd3faee7b124649ed5736d2f
