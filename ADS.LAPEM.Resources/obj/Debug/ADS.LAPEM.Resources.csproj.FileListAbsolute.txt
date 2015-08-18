@@ -81,3 +81,4 @@ C:\ramiro\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Seguridad.LAPEM_Enti
 C:\ramiro\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.csproj.GenerateResource.Cache
 C:\ramiro\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.dll
 C:\ramiro\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.pdb
+C:\ADSLAPEM\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.csproj.GenerateResource.Cache

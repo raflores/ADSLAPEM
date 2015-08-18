@@ -33,3 +33,5 @@ C:\ramiro\ADS.LAPEM.Web\bin\es\System.Web.Razor.resources.dll
 C:\ramiro\ADS.LAPEM.Web\bin\es\System.Web.WebPages.resources.dll
 C:\ramiro\ADS.LAPEM.Web\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\ramiro\ADS.LAPEM.Web\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\ADSLAPEM\ADS.LAPEM.Web\obj\Debug\RdlCompile.cache
+C:\ADSLAPEM\ADS.LAPEM.Web\obj\Debug\RdlCompile.compiled
