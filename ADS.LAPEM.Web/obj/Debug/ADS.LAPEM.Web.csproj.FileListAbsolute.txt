@@ -33,3 +33,38 @@ C:\ramiro\ADS.LAPEM.Web\bin\es\System.Web.Razor.resources.dll
 C:\ramiro\ADS.LAPEM.Web\bin\es\System.Web.WebPages.resources.dll
 C:\ramiro\ADS.LAPEM.Web\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\ramiro\ADS.LAPEM.Web\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Web.dll.config
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Web.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Web.pdb
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Entities.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Repositories.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Resources.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Services.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Bsd.Common.Infrastructure.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Newtonsoft.Json.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Web.Razor.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Web.WebPages.Deployment.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Web.WebPages.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Web.WebPages.Razor.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\WebActivator.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\DataAnnotationsExtensions.ClientValidation.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\DataAnnotationsExtensions.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Entities.pdb
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Repositories.pdb
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Resources.pdb
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Services.pdb
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Microsoft.Web.Infrastructure.xml
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Web.Razor.xml
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Web.WebPages.xml
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Web.WebPages.Deployment.xml
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Web.WebPages.Razor.xml
+C:\proyecto ADS\ADS.LAPEM.Web\bin\es\System.Web.Razor.resources.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\es\System.Web.WebPages.resources.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\proyecto ADS\ADS.LAPEM.Web\obj\Debug\ADS.LAPEM.Web.csprojResolveAssemblyReference.cache
+C:\proyecto ADS\ADS.LAPEM.Web\obj\Debug\RdlCompile.cache
+C:\proyecto ADS\ADS.LAPEM.Web\obj\Debug\RdlCompile.compiled
+C:\proyecto ADS\ADS.LAPEM.Web\obj\Debug\ADS.LAPEM.Web.dll
+C:\proyecto ADS\ADS.LAPEM.Web\obj\Debug\ADS.LAPEM.Web.pdb
