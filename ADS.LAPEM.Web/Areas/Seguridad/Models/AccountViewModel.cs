@@ -16,6 +16,5 @@ namespace ADS.LAPEM.Web.Areas.Seguridad.Models
         {
             Usuario = usuario;
         }
-
     }
 }
