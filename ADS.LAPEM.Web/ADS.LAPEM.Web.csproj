@@ -44,50 +44,47 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ADS.LAPEM.Web">
-      <HintPath>..\_ActualesADS\ADS.LAPEM.Web.dll</HintPath>
-    </Reference>
     <Reference Include="Bsd.Common.Infrastructure, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\_ActualesADS\Bsd.Common.Infrastructure.1.0.5-M1\lib\net40\Bsd.Common.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="Bsd.Common.Report">
-      <HintPath>..\_ActualesADS\Bsd.Common.Report.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Bsd.Common.Report.dll</HintPath>
     </Reference>
     <Reference Include="Common.Logging">
-      <HintPath>..\_ActualesADS\Common.Logging.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\_ActualesADS\DocumentFormat.OpenXml.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\_ActualesADS\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Spring.Aop">
-      <HintPath>..\_ActualesADS\Spring.Aop.dll</HintPath>
+      <HintPath>..\packages\Spring.Aop.2.0.0-M2\lib\net40\Spring.Aop.dll</HintPath>
     </Reference>
     <Reference Include="Spring.Core">
-      <HintPath>..\_ActualesADS\Spring.Core.dll</HintPath>
+      <HintPath>..\packages\Spring.Core.2.0.0-M2\lib\net40\Spring.Core.dll</HintPath>
     </Reference>
     <Reference Include="Spring.Data">
-      <HintPath>..\_ActualesADS\Spring.Data.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Spring.Data.dll</HintPath>
     </Reference>
     <Reference Include="Spring.Web, Version=2.0.0.40000, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\_ActualesADS\Spring.Web.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Spring.Web.dll</HintPath>
     </Reference>
     <Reference Include="Spring.Web.Mvc4">
-      <HintPath>..\_ActualesADS\Spring.Web.Mvc4.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Spring.Web.Mvc4.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Linq.Dynamic">
-      <HintPath>..\_ActualesADS\System.Linq.Dynamic.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\System.Linq.Dynamic.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
@@ -107,7 +104,7 @@
     </Reference>
     <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\_ActualesADS\System.Web.Optimization.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\System.Web.Optimization.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
@@ -119,7 +116,7 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="EntityFramework">
-      <HintPath>..\_ActualesADS\EntityFramework.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -127,7 +124,7 @@
     </Reference>
     <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\_ActualesADS\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
     </Reference>
@@ -137,7 +134,7 @@
       <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Providers">
-      <HintPath>..\_ActualesADS\System.Web.Providers.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\System.Web.Providers.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -157,11 +154,11 @@
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
-      <HintPath>..\_ActualesADS\WebGrease.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\WebGrease.dll</HintPath>
     </Reference>
     <Reference Include="Antlr3.Runtime">
       <Private>True</Private>
-      <HintPath>..\_ActualesADS\Antlr3.Runtime.dll</HintPath>
+      <HintPath>..\..\..\_BSD_Proyectos\Respaldo_robertoaguilar\packages\_ActualesADS\Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
