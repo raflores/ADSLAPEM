@@ -108,3 +108,30 @@ C:\ADSLAPEM-DES\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Seguridad.LAPE
 C:\ADSLAPEM-DES\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.csproj.GenerateResource.Cache
 C:\ADSLAPEM-DES\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.dll
 C:\ADSLAPEM-DES\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.pdb
+C:\proyecto ADS\ADS.LAPEM.Resources\bin\Debug\ADS.LAPEM.Resources.dll
+C:\proyecto ADS\ADS.LAPEM.Resources\bin\Debug\ADS.LAPEM.Resources.pdb
+C:\proyecto ADS\ADS.LAPEM.Resources\bin\Debug\Bsd.Common.Infrastructure.dll
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.csprojResolveAssemblyReference.cache
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Calibracion.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Color.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Equipo.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Especificacion.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Linea.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Norma.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_NormaEnsayo.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_NormaProducto.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Planta.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Producto.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Proveedor.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Prueba.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Silo.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_TipoProducto.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_TipoPrueba.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Catalogo.LAPEM_Entities_Turno.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Example.LAPEM_Entities_Person.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Seguridad.LAPEM_Entities_Menu.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Seguridad.LAPEM_Entities_Perfil.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.Seguridad.LAPEM_Entities_Usuario.resources
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.csproj.GenerateResource.Cache
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.dll
+C:\proyecto ADS\ADS.LAPEM.Resources\obj\Debug\ADS.LAPEM.Resources.pdb
