@@ -16,6 +16,5 @@ namespace ADS.LAPEM.Web.Areas.Catalogo.Models
         {
             Color = color;
         }
-
-    }
+	}
 }

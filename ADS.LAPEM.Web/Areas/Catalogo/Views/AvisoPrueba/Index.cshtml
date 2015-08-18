@@ -17,12 +17,10 @@
 
 <br />
 
-
-
 @using (Html.BeginForm("EnviarAviso", "AvisoPrueba", FormMethod.Post, new { id = "FrmAvisoPrueba" }))
 {
     <div id="avResultado"></div>
-    <div style="width:500px; padding-left:300px">
+    <div style="width:1024px; padding-left:initial; margin-top:10px">
         <table id="grid"></table>
         <div id="pager"></div>
     </div>        
@@ -34,12 +32,6 @@
         <table id="gridDetalle"></table>
     </div>
 }
-
-
-
-
-
-
 
 <script type="text/javascript">
     $(document).ready(function () {
