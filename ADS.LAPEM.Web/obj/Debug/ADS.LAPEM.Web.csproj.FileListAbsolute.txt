@@ -130,6 +130,24 @@ C:\ADSLAPEM-DES\ADS.LAPEM.Web\obj\Debug\RdlCompile.cache
 C:\ADSLAPEM-DES\ADS.LAPEM.Web\obj\Debug\RdlCompile.compiled
 C:\ADSLAPEM-DES\ADS.LAPEM.Web\obj\Debug\ADS.LAPEM.Web.dll
 C:\ADSLAPEM-DES\ADS.LAPEM.Web\obj\Debug\ADS.LAPEM.Web.pdb
+<<<<<<< HEAD
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Antlr3.Runtime.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Bsd.Common.Report.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Common.Logging.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\EntityFramework.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Spring.Aop.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Spring.Core.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Spring.Data.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Spring.Web.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\Spring.Web.Mvc4.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Linq.Dynamic.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Web.Optimization.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Web.Providers.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\WebGrease.dll
+C:\proyecto ADS\ADS.LAPEM.Web\bin\System.Web.Mvc.xml
+C:\proyecto ADS\ADS.LAPEM.Web\bin\ADS.LAPEM.Services.XmlSerializers.dll
+=======
 C:\ADSLAPEM\ADS.LAPEM.Web\bin\ADS.LAPEM.Web.dll
 C:\ADSLAPEM\ADS.LAPEM.Web\bin\ADS.LAPEM.Web.pdb
 C:\ADSLAPEM\ADS.LAPEM.Web\bin\ADS.LAPEM.Entities.dll
@@ -192,3 +210,4 @@ C:\ADSLAPEM\ADS.LAPEM.Web\obj\Debug\RdlCompile.cache
 C:\ADSLAPEM\ADS.LAPEM.Web\obj\Debug\RdlCompile.compiled
 C:\ADSLAPEM\ADS.LAPEM.Web\obj\Debug\ADS.LAPEM.Web.dll
 C:\ADSLAPEM\ADS.LAPEM.Web\obj\Debug\ADS.LAPEM.Web.pdb
+>>>>>>> 63ff104a15bd868bcd3faee7b124649ed5736d2f
