@@ -120,7 +120,7 @@ header, footer, nav, section {
 #cssmenu .has-sub ul {
   display: none;
   position: absolute;
-  top: 36px;
+  top: 35px;
   left: -1px;
   min-width: 100%;
   text-align: center;
@@ -139,7 +139,7 @@ header, footer, nav, section {
   line-height: 120%;
   padding: 9px 5px;
   text-align: center;
-  width:140px;
+  width:135px;
 }
 
 
