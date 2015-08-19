@@ -20,14 +20,14 @@
 @using (Html.BeginForm("EnviarAviso", "AvisoPrueba", FormMethod.Post, new { id = "FrmAvisoPrueba" }))
 {
     <div id="avResultado"></div>
-    <div style="width:1024px; padding-left:initial; margin-top:10px">
-        <table id="grid"></table>
-        <div id="pager"></div>
-    </div>        
     <div>
        <p><input type="button" id="btnNew" value="Enviar Aviso" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" /></p>
     </div>
-
+     <div style="width:1024px; padding-left:initial; margin-top:10px">
+        <table id="grid"></table>
+        <div id="pager"></div>
+    </div>        
+    
     <div id="dlg" title="Detalle del Lote">
         <table id="gridDetalle"></table>
     </div>
